@@ -1,2 +1,18 @@
-$aron: #ff0000;
-body { background-color: $aron; }
+@import 'incl/variables.scss';
+@import 'incl/mixins.scss';
+
+
+
+body {
+    background-color: $bgColor;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    h1 {
+        color: #fff;
+    }
+}

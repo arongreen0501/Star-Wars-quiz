@@ -1,2 +1,9 @@
 body {
-  background-color: #ff0000; }
+  background-color: #1D3544; }
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+  .container h1 {
+    color: #fff; }
