@@ -29,13 +29,13 @@ require('angular');
             // route for the about page
             .when('/name', {
                 templateUrl : './pages/name.html',
-                controller  : 'quizController1'
+                controller  : 'quizController'
             })
 
             // route for the contact page
             .when('/gender', {
                 templateUrl : './pages/gender.html',
-                controller  : 'quizController2'
+                controller  : 'quizController'
             });
     });
 
@@ -45,13 +45,8 @@ require('angular');
         $scope.message = 'Hvaða Star Wars persóna ert þú?';
     });
 
-    app.controller('quizController1', function($scope) {
-        $scope.message = 'Quiz 1 Page';
-    });
-
-    app.controller('quizController2', function($scope) {
-        $scope.message = 'Quiz 2 Page';
-    });
-
     var MainController = require('./controllers/MainController');
     app.controller('MainController', ['$scope', MainController])
+
+    var quizController = require('./controllers/quizController');
+    app.controller('MainController', ['$scope', quizController])
