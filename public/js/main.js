@@ -6,7 +6,7 @@ var app = angular.module('app', [])
 app.controller('MainController', ['$scope', MainController])
 },{"./controllers/MainController":2,"angular":4}],2:[function(require,module,exports){
 module.exports = function($scope) {
-    $scope.message = 'Two birds killed with one stone!'
+    $scope.message = 'Star Wars!'
 }
 },{}],3:[function(require,module,exports){
 /**
