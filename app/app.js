@@ -11,6 +11,7 @@ require('angular');
 
     var quizController = require('./controllers/quizController');
     app.controller('MainController', ['$scope', quizController])
+    app.controller('quizController', ['$scope', quizController])
 
     // configure our routes
     app.config(function($routeProvider) {
@@ -37,6 +38,8 @@ require('angular');
             // route for gender
             .when('/piss', {
                 templateUrl : './pages/piss.html',
+            .when('/hair', {
+                templateUrl : './pages/hair.html',
                 controller  : 'quizController'
             });
     });
