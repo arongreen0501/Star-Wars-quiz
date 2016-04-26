@@ -1,1 +1,23 @@
-Residence
+<div class="container">
+    <h3>Hvar býrð þú?</h3>
+    <form ng-submit="processForm()">
+        <button name="residence" id="resHofudborg" type="button" ng-model="formData.resHofudborg">Höfuðborgarsvæðinu</button>
+        <button name="residence" id="resSudurnes" type="button" ng-model="formData.resSudurnes">Suðurnesjum</button>
+        <button name="residence" id="resSudurland" type="button" ng-model="formData.resSudurland">Suðurlandi</button>
+        <button name="residence" id="resAusturland" type="button" ng-model="formData.resAusturland">Austurlandi</button>
+        <button name="residence" id="resAustfjordur" type="button" ng-model="formData.resAustfjordur">Austfjörðum</button>
+        <button name="residence" id="resNordurland" type="button" ng-model="formData.resNordurland">Norðurlandi</button>
+        <button name="residence" id="resVestfjordur" type="button" ng-model="formData.resVestfjordur">Vestfjörðum</button>
+        <button name="residence" id="resVesturland" type="button" ng-model="formData.resVesturland">Vesturland</button>
+          <span class="glyphicon glyphicon-flash"></span> Submit!
+        </button>
+    </form>
+    <a href="/#/">Intro</a>
+
+    <a href="/#/gender">Gender</a>
+
+    <pre>
+      {{ formData }}
+    </pre>
+
+</div>
