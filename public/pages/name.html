@@ -1,11 +1,16 @@
 <div class="container">
     <h3>Fyrst þurfum við fullt nafn, þyngd og hæð</h3>
     <form>
-        <input id="name" type="text" placeholder="Fullt nafn" />
-        <input id="weight" type="text" placeholder="Þyngd <span>(kg)</span>" />
-        <input id="height" type="text" placeholder="Hæð <span>(cm)</span>" />
+        <input id="name" type="text" placeholder="Fullt nafn" ng-model="formData.name" />
+        <input id="weight" type="text" placeholder="Þyngd <span>(kg)</span>" ng-model="formData.weight" />
+        <input id="height" type="text" placeholder="Hæð <span>(cm)</span>" ng-model="formData.height" />
     </form>
     <a href="/#/">Intro</a>
 
     <a href="/#/gender">Gender</a>
+
+    <pre>
+      {{ formData }}
+    </pre>
+
 </div>

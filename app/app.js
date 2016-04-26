@@ -5,11 +5,6 @@ require('angular');
 // app.controller('MainController', ['$scope', MainController])
 
 
-
-
-
-
-
 // script.js
 
     // create the module and name it app
@@ -26,13 +21,13 @@ require('angular');
                 controller  : 'quizController'
             })
 
-            // route for the about page
+            // route for name
             .when('/name', {
                 templateUrl : './pages/name.html',
                 controller  : 'quizController'
             })
 
-            // route for the contact page
+            // route for gender
             .when('/gender', {
                 templateUrl : './pages/gender.html',
                 controller  : 'quizController'
@@ -50,3 +45,14 @@ require('angular');
 
     var quizController = require('./controllers/quizController');
     app.controller('MainController', ['$scope', quizController])
+
+
+
+
+    function formController($scope, $http) {
+
+      // create a blank object to hold our form information
+      // $scope will allow this to pass between controller and view
+      $scope.formData = {};
+
+  }
