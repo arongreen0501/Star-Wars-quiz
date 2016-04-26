@@ -2,20 +2,16 @@
 require('angular');
 // var MainController = require('./controllers/MainController')
 
-// var app = angular.module('app', [])
-// app.controller('MainController', ['$scope', MainController])
-
-
-
-
-
-
-
-// script.js
 
     // create the module and name it app
         // also include ngRoute for all our routing needs
     var app = angular.module('app', [require('angular-route')]);
+
+    var MainController = require('./controllers/MainController');
+    app.controller('MainController', ['$scope', MainController])
+
+    var quizController = require('./controllers/quizController');
+    app.controller('MainController', ['$scope', quizController])
 
     // configure our routes
     app.config(function($routeProvider) {
@@ -27,32 +23,33 @@ require('angular');
                 controller  : 'quizController'
             })
 
-            // route for the about page
+            // route for name
             .when('/name', {
                 templateUrl : './pages/name.html',
                 controller  : 'quizController'
             })
 
-            // route for the contact page
+            // route for gender
             .when('/gender', {
                 templateUrl : './pages/gender.html',
                 controller  : 'quizController'
+            })
+
+            // route for gender
+            .when('/piss', {
+                templateUrl : './pages/piss.html',
+                controller  : 'quizController'
             });
     });
-
-    // create the controller and inject Angular's $scope
-    app.controller('quizController', function($scope) {
-        // create a message to display in our view
-        $scope.message = 'Hvaða Star Wars persóna ert þú?';
-    });
-
-    var MainController = require('./controllers/MainController');
-    app.controller('MainController', ['$scope', MainController])
-},{"./controllers/MainController":2,"angular":6,"angular-route":4}],2:[function(require,module,exports){
+},{"./controllers/MainController":2,"./controllers/quizController":3,"angular":7,"angular-route":5}],2:[function(require,module,exports){
 module.exports = function($scope) {
     $scope.message = 'Star Wars!'
 }
 },{}],3:[function(require,module,exports){
+module.exports = function($scope) {
+    $scope.message = 'Hvaða Star Wars persóna ert þú?';
+}
+},{}],4:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -1079,11 +1076,11 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 require('./angular-route');
 module.exports = 'ngRoute';
 
-},{"./angular-route":3}],5:[function(require,module,exports){
+},{"./angular-route":4}],6:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -31952,8 +31949,8 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":5}]},{},[1]);
+},{"./angular":6}]},{},[1]);

@@ -9,6 +9,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^3.2.2",
     "gulp-ruby-sass": "^2.0.6",
+    "node-php-server": "^0.1.2",
     "vinyl-source-stream": "^1.1.0"
   },
   "repository": {
