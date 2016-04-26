@@ -11,7 +11,7 @@ require('angular');
     app.controller('MainController', ['$scope', MainController])
 
     var quizController = require('./controllers/quizController');
-    app.controller('MainController', ['$scope', quizController])
+    app.controller('quizController', ['$scope', quizController])
 
     // configure our routes
     app.config(function($routeProvider) {
@@ -36,8 +36,32 @@ require('angular');
             })
 
             // route for gender
-            .when('/piss', {
-                templateUrl : './pages/piss.html',
+            .when('/hair', {
+                templateUrl : './pages/hair.html',
+                controller  : 'quizController'
+            })
+
+            // route for gender
+            .when('/eyes', {
+                templateUrl : './pages/eyes.html',
+                controller  : 'quizController'
+            })
+
+            //route for residence
+            .when('/residence', {
+                templateUrl : './pages/residence.html',
+                controller  : 'quizController'
+            })
+
+            //route for driver's license
+            .when('/driver-license', {
+                templateUrl : './pages/driver-license.html',
+                controller  : 'quizController'
+            })
+
+            //route for results
+            .when('/results', {
+                templateUrl : './pages/results.html',
                 controller  : 'quizController'
             });
     });
