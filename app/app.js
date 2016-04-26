@@ -10,7 +10,7 @@ require('angular');
     app.controller('MainController', ['$scope', MainController])
 
     var quizController = require('./controllers/quizController');
-    app.controller('MainController', ['$scope', quizController])
+    app.controller('quizController', ['$scope', quizController])
 
     // configure our routes
     app.config(function($routeProvider) {
