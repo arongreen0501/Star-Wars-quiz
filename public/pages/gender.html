@@ -1,9 +1,29 @@
-<div class="container">
 
-    {{ message }}
+
+    <p>{{ message }}</p>
 
     <a href="/#/name">Name</a>
 
     <a href="/#/">Intro</a>
+
+
+
+
+<div class="container">
+    <h3>Hver er kynið þitt?</h3>
+    <form ng-submit="processForm()">
+        <button name="gender" id="genderMale" type="button" ng-model="formData.genderMale">Karlkyn</button>
+        <button name="gender" id="genderFemale" type="button" ng-model="formData.genderFemale">Kvenkyn</button>
+        <button name="gender" id="genderOther" type="button" ng-model="formData.genderOther">Annað</button>
+          <span class="glyphicon glyphicon-flash"></span> Submit!
+        </button>
+    </form>
+    <a href="/#/">Intro</a>
+
+    <a href="/#/gender">Gender</a>
+
+    <pre>
+      {{ formData }}
+    </pre>
 
 </div>
