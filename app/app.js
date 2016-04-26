@@ -35,8 +35,6 @@ require('angular');
             })
 
             // route for gender
-            .when('/piss', {
-                templateUrl : './pages/piss.html',
             .when('/hair', {
                 templateUrl : './pages/hair.html',
                 controller  : 'quizController'
