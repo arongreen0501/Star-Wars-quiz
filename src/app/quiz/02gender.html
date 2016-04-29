@@ -19,9 +19,11 @@
     <label for="">Other</label>
     <input ng-model="vm.newSubmission.gender" type="radio" value="other" name="other" class="form-control" />
   </div>
-  <button type="submit" class="btn btn-primary">Next</button>
-  <a href="/#/quiz"><button type="button" class="btn btn-default">Back</button></a>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a href="/src/#/quiz"><button type="button" class="btn btn-default">Back</button></a>
 </form>
+
+<a class="btn btn-lg" href="/src/#/hair">Next</a>
 
 <div ng-repeat="submission in vm.submissions">
   Name: {{ submission.name }} - Weight: {{ submission.weight }} - Height: {{ submission.height }} | Gender: {{ submission.gender }}

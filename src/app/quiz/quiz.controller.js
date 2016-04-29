@@ -14,7 +14,7 @@
 
       quizFactory.quizData = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
 
-      // var fireSubmissions = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
+      var fireSubmissions = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
       // var fireTextMessages = new Firebase('https://ang-course.firebaseio.com/textMessages');
 
       function Submission() {
@@ -25,13 +25,13 @@
         this.hair = '';
       }
 
-      vm.step1 = function () {
+      step1 = function () {
         quizFactory.quizData.name = vm.name;
         quizFactory.quizData.name = vm.height;
         quizFactory.quizData.name = vm.weight;
       }
 
-      vm.step2 = function () {
+      step2 = function () {
         quizFactory.quizData.prump = vm.gender;
       }
 
@@ -55,6 +55,7 @@
       function submitToFirebase() {
         vm.submissions.$add(vm.newSubmission);
         vm.newSubmission = new Submission();
+        console.log('snilld');
       };
 
 

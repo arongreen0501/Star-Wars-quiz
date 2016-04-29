@@ -1,6 +1,6 @@
 (function(){
   'use strict';
 
-  angular.module('app.quiz', []);
-
+  angular.module('app.quiz', [])
+    // .factory('quizFactory', function() {});
 })();
