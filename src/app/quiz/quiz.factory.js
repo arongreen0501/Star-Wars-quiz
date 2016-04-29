@@ -1,13 +1,13 @@
-(function() {
-  angular
-    .module('app.quiz')
-    .factory('quizFactory', []);
+// (function() {
+//   angular
+//     .module('app.quiz')
+//     .factory('quizFactory', []);
 
-    factory = {};
+//     factory = {};
 
-    factory.quizData = {};
+//     factory.quizData = {};
 
-    return factory;
+//     return factory;
 
 
-})();
+// })();
