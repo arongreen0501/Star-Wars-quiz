@@ -9,12 +9,17 @@
 
     function configFunction ($routeProvider) {
       $routeProvider.when('/quiz', {
-        templateUrl: 'app/quiz/quiz1.html',
+        templateUrl: 'app/quiz/01quiz.html',
         controller: 'quizController',
         controllerAs: 'vm'
       })
-      $routeProvider.when('/quiz2', {
-        templateUrl: 'app/quiz/quiz2.html',
+      $routeProvider.when('/gender', {
+        templateUrl: 'app/quiz/02gender.html',
+        controller: 'quizController',
+        controllerAs: 'vm'
+      })
+      $routeProvider.when('/haircolor', {
+        templateUrl: 'app/quiz/03hair.html',
         controller: 'quizController',
         controllerAs: 'vm'
       })
