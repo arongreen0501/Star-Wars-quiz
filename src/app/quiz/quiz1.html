@@ -1,15 +1,19 @@
 <form ng-submit="vm.addSubmission()" class="form-inline party-form">
   <div class="form-group">
     <label for="">Full name</label>
-    <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" required />
+    <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" />
   </div>
   <div class="form-group">
-    <label for="">Phone</label>
-    <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (cm)" required />
+    <label for="">Weight</label>
+    <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" required />
   </div>
   <div class="form-group">
-    <label for="">Size of party</label>
+    <label for="">Height</label>
     <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" required />
   </div>
   <button type="submit" class="btn btn-primary">Next</button>
 </form>
+
+<ul ng-repeat="submission in vm.submissions">
+  <li>{{ submission.name }} – {{submission.weight}} – {{submission.height}}</li>
+</ul>
