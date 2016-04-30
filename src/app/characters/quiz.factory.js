@@ -16,7 +16,7 @@
 (function() {
 
     angular
-        .module("app.quiz")
+        .module("app.characters")
         .factory("DataService", DataService);
 
         function DataService() {
@@ -34,13 +34,17 @@
         var characterData = [
 
         {
-          name: "Luke Skywalker",
-          height: "172",
-          mass: "77",
-          hair_color: "blond",
-          eye_color: "blue",
-          gender: "male",
-          homeworld: "http://swapi.co/api/planets/1/"
+          "name": "Luke Skywalker",
+          "height": "172",
+          "mass": "77",
+          "hair_color": "blond",
+          "eye_color": "blue",
+          "gender": "male",
+          "homeworld": "http://swapi.co/api/planets/1/",
+          "vehicles": [
+            "http://swapi.co/api/vehicles/14/",
+            "http://swapi.co/api/vehicles/30/"
+          ]
         },
         {
           "name": "C-3PO",

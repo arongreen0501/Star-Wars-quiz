@@ -1,0 +1,25 @@
+<h1>Characters</h1>
+
+
+<p ng-repeat="character in vm.data">
+  <strong>{{ character.name }}</strong>
+  <br>
+  {{ character.height }}
+  <br>
+  {{ character.mass }}
+  <br>
+  {{ character.gender }}
+  <br>
+  {{ character.hair_color }}
+  <br>
+  {{ character.eye_color }}
+  <br>
+  {{ character.height }}
+  <br>
+  {{ character.homeworld }}
+  <br>
+  {{ character.vehicles }}
+  <br>
+  <button ng-click="vm.calculateCharacterScore(character)" class="btn btn-danger" type="">Calculate score</button>
+  <br>
+</p>

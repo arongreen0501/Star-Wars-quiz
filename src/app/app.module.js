@@ -11,7 +11,8 @@
 
     // Custom modules.
     'app.intro',
-    'app.quiz'
+    'app.quiz',
+    'app.characters'
 
     ]);
 
