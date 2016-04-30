@@ -68,13 +68,13 @@
 
 
 
-
-
-  <button type="submit" class="btn btn-primary">Next</button>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
 <a class="btn btn-lg" href="/src/#/gender">Next</a>
 
-<ul ng-repeat="submission in vm.submissions">
-  <li>{{ submission.name }} – {{submission.weight}} – {{submission.height}}</li>
+<ul ng-repeat="submiss in vm.submissions">
+  <li>{{ submiss.name }} – {{submiss.weight}} – {{submiss.height}}
+  <button ng-click="vm.calculateScore(submiss)" class="btn btn-danger" type="">Calculate score</button>
+  <button ng-click="vm.removeSubmission(submiss)" class="btn btn-danger" type="">Remove</button></li>
 </ul>

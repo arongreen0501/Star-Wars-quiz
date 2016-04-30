@@ -28,17 +28,6 @@
         this.drive = '';
       };
 
-      // vm.info = {
-      //   name: '',
-      //   weight = '',
-      //   height = '',
-      //   gender = '',
-      //   hair = '',
-      //   eyes = '',
-      //   residence = '',
-      //   drive = ''
-      // }
-
       // step1 = function () {
       //   quizFactory.quizData.name = vm.name;
       //   quizFactory.quizData.name = vm.height;
@@ -60,16 +49,43 @@
       vm.newSubmission = new Submission();
       vm.submissions = $firebaseArray(fireSubmissions);
       vm.addSubmission =  addSubmission;
+      vm.calculateScore = calculateScore;
+      vm.removeSubmission = removeSubmission;
 
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
         vm.newSubmission = new Submission();
-        console.log(Submission);
       };
 
-      // function calculateScore(Submission) {
-      //   console.log('prufa')
+      // var rank = 0;
+
+      // function calculateScore(submission) {
+      //   // Reikna stig
+      //   var score = {
+      //     name: submission.name
+      //   }
+      //   console.log(score)
       // };
+
+      function calculateScore(submiss) {
+        var rank = 0;
+        if (submiss.name.length == 6) {
+          rank = rank +10;
+        } else {
+          rank = rank +0;
+        };
+        if (submiss.eyes == 'brown') {
+          rank = rank +10;
+        } else {
+          rank = rank +0;
+        };
+        console.log(rank);
+        // vm.submissions.$remove(submiss);
+      };
+
+      function removeSubmission(submiss) {
+        vm.submissions.$remove(submiss);
+      };
 
       // function submitToFirebase() {
       //   vm.submissions.$add(vm.newSubmission);
