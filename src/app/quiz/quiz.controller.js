@@ -52,6 +52,21 @@
       vm.addSubmission =  addSubmission;
       vm.calculateScore = calculateScore;
       vm.removeSubmission = removeSubmission;
+      vm.skref = skref;
+      vm.aframSkref = aframSkref;
+      vm.afturSkref = afturSkref;
+
+      function skref() {
+        vm.skref = 1;
+      }
+
+      function aframSkref() {
+        vm.skref++;
+      }
+
+      function afturSkref() {
+        vm.skref--;
+      }
 
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
