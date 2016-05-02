@@ -51,6 +51,7 @@
       vm.addSubmission =  addSubmission;
       vm.calculateScore = calculateScore;
       vm.removeSubmission = removeSubmission;
+      vm.scorePage = scorePage();
 
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
@@ -83,7 +84,9 @@
         } else {
           rank = rank+ 10;
         };
-        console.log(rank + 'eftir lengd nafns');
+
+        var rank1 = rank;
+        console.log('Lengd nafns: ' + rank1 + ' stig');
 
         if (submiss.height <= 149) {
           rank = rank + 1;
@@ -100,7 +103,8 @@
         } else {
           rank = rank + 27;
         };
-        console.log(rank + 'eftir hæð');
+        var rank2 = rank - rank1;
+        console.log('Hæð: ' + rank2 + ' stig');
 
         if (submiss.weight <= 40) {
           rank = rank + 2;
@@ -123,7 +127,8 @@
         } else {
           rank = rank + 22;
         };
-        console.log(rank + 'eftir þyngd');
+        var rank3 = rank - rank2;
+        console.log('Þyngd: ' + rank3 + ' stig');
 
         if (submiss.residence == 'reykjavik') {
           rank = rank + 2;
@@ -136,7 +141,8 @@
         } else {
           rank = rank + 13;
         };
-        console.log(rank + 'eftir kjördæmi');
+        var rank4 = rank - rank3;
+        console.log('Kjördæmi: ' + rank4 + ' stig');
 
         if (submiss.gender == 'male') {
           rank = rank + 0;
@@ -145,14 +151,16 @@
         } else {
           rank = rank + 10;
         };
-        console.log(rank + 'eftir kyn');
+        var rank5 = rank - rank4;
+        console.log('Kyn: ' + rank5 + ' stig');
 
         if (submiss.drive == 'bilprof') {
           rank = rank + 10;
         } else {
           rank = rank + 0;
         };
-        console.log(rank + 'eftir bílpróf');
+        var rank6 = rank - rank5;
+        console.log('Bílpróf: ' + rank6 + ' stig');
 
         if (submiss.hair == 'other') {
           rank = rank + 0;
@@ -167,7 +175,8 @@
         } else {
           rank = rank + 17;
         };
-        console.log(rank + 'eftir hár');
+        var rank7 = rank - rank6;
+        console.log('Hárlitur: ' + rank7 + ' stig');
 
         if (submiss.eyes == 'blue') {
           rank = rank + 0;
@@ -182,10 +191,17 @@
         } else {
           rank = rank + 14;
         };
+        var rank8 = rank - rank7;
+        console.log('Augnlitur: ' + rank8 + ' stig');
 
-        console.log(submiss.name + ' ' + rank + ' points');
+        console.log(submiss.name + 'Samtals ' + rank + ' points');
         // vm.submissions.$remove(submiss);
       };
+
+      function scorePage() {
+          // url('src/#/quiz/'+ rank)
+          window.location.href = 'src/#/quiz/'+rank;
+        };
 
       function removeSubmission(submiss) {
         vm.submissions.$remove(submiss);
@@ -196,6 +212,8 @@
       //   vm.newSubmission = new Submission();
       //   console.log('snilld');
       // };
+
+
 
 
     }
