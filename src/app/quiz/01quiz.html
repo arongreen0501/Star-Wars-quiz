@@ -1,4 +1,4 @@
-<form name="myAwesomeForm" ng-submit="vm.addSubmission()" class="form-inline party-form">
+<form name="myAwesomeForm" class="form-inline party-form">
   <fieldset ng-show="vm.skref == 1">
   <div class="form-group">
     <label for="">Full name</label>
@@ -91,13 +91,13 @@
 
 
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" ng-click="vm.addSubmission()">Submit</button>
 </form>
 
-<a class="btn btn-lg" href="/src/#/gender">Next</a>
+
 
 <ul ng-repeat="submiss in vm.submissions">
-  <li>{{ submiss.name }} – {{submiss.weight}} – {{submiss.height}}
+  <li>{{ submiss.name }} – {{submiss.weight}} – {{submiss.height}} - {{submiss.gender}} - {{submiss.hair}} - {{submiss.eyes}} - {{submiss.residence}} - {{submiss.drive}}
   <button ng-click="vm.calculateScore(submiss)" class="btn btn-danger" type="">Calculate score</button>
   <button ng-click="vm.removeSubmission(submiss)" class="btn btn-danger" type="">Remove</button></li>
 </ul>

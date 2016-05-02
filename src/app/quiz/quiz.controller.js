@@ -27,7 +27,7 @@
         this.eyes = '';
         this.residence = '';
         this.drive = '';
-      };
+      }
 
       // step1 = function () {
       //   quizFactory.quizData.name = vm.name;
@@ -68,7 +68,7 @@
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
         vm.newSubmission = new Submission();
-      };
+      }
 
       // var rank = 0;
 
@@ -94,7 +94,7 @@
         };
         console.log(rank);
         // vm.submissions.$remove(submiss);
-      };
+      }
 
       //   function calculateScore2(character) {
       //     var rank = 0;
@@ -218,7 +218,7 @@
 
       function removeSubmission(submiss) {
         vm.submissions.$remove(submiss);
-      };
+      }
 
       // function submitToFirebase() {
       //   vm.submissions.$add(vm.newSubmission);
