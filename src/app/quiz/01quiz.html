@@ -76,18 +76,32 @@
   <fieldset ng-show="vm.skref == 4">
     <h3>Eye color</h3>
     <div class="form-group">
-      <label for="blue-eyes">Blue</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="blue" name="blue" class="form-control" />
-      <label for="grayblue-eyes">Gray-blue</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="grayblue" name="blue" class="form-control" />
-      <label for="brown-eyes">Brown</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="brown" name="brown" class="form-control" />
-      <label for="lightbrown-eyes">Lightbrown</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="lightbrown" name="lightbrown" class="form-control" />
-      <label for="green-eyes">Green</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="green" name="green" class="form-control" />
-      <label for="other-eyes">Other</label>
-      <input ng-model="vm.newSubmission.eyes" type="radio" value="other" name="other" class="form-control" />
+      <ul class="radio-style">
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="blue" name="blue" class="form-control" />
+          <label for="blue-eyes">Blue</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="grayblue" name="blue" class="form-control" />
+          <label for="grayblue-eyes">Gray-blue</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="brown" name="brown" class="form-control" />
+          <label for="brown-eyes">Brown</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="lightbrown" name="lightbrown" class="form-control" />
+          <label for="lightbrown-eyes">Lightbrown</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="green" name="green" class="form-control" />
+          <label for="green-eyes">Green</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.eyes" type="radio" value="other" name="other" class="form-control" />
+          <label for="other-eyes">Other</label>
+        </li>
+      </ul>
     </div>
     <button type="button" ng-click="vm.afturSkref()">Til baka</button>
     <button type="button" ng-click="vm.aframSkref()">Áfram</button>
@@ -96,16 +110,28 @@
   <fieldset ng-show="vm.skref == 5">
     <h3>Kjördæmi</h3>
     <div class="form-group">
-      <label for="reykjavik">Reykjavík (norður og suður)</label>
-      <input ng-model="vm.newSubmission.residence" type="radio" value="reykjavik" name="reykjavik" class="form-control" />
-      <label for="sudvestur">Suðvestur</label>
-      <input ng-model="vm.newSubmission.residence" type="radio" value="sudvestur" name="sudvestur" class="form-control" />
-      <label for="nordvestur">Norðvestur</label>
-      <input ng-model="vm.newSubmission.residence" type="radio" value="nordvestur" name="nordvestur" class="form-control" />
-      <label for="nordaustur">Norðaustur</label>
-      <input ng-model="vm.newSubmission.residence" type="radio" value="nordaustur" name="nordaustur" class="form-control" />
-      <label for="sudur">Suður</label>
-      <input ng-model="vm.newSubmission.residence" type="radio" value="sudur" name="sudur" class="form-control" />
+      <ul class="radio-style">
+        <li>
+        <input ng-model="vm.newSubmission.residence" type="radio" value="reykjavik" name="reykjavik" class="form-control" />
+        <label for="reykjavik">Reykjavík (norður og suður)</label>
+        </li>
+        <li>
+        <input ng-model="vm.newSubmission.residence" type="radio" value="sudvestur" name="sudvestur" class="form-control" />
+        <label for="sudvestur">Suðvestur</label>
+        </li>
+        <li>
+        <input ng-model="vm.newSubmission.residence" type="radio" value="nordvestur" name="nordvestur" class="form-control" />
+        <label for="nordvestur">Norðvestur</label>
+        </li>
+        <li>
+        <input ng-model="vm.newSubmission.residence" type="radio" value="nordaustur" name="nordaustur" class="form-control" />
+        <label for="nordaustur">Norðaustur</label>
+        </li>
+        <li>
+        <input ng-model="vm.newSubmission.residence" type="radio" value="sudur" name="sudur" class="form-control" />
+        <label for="sudur">Suður</label>
+        </li>
+      </ul>
     </div>
     <button type="button" ng-click="vm.afturSkref()">Til baka</button>
     <button type="button" ng-click="vm.aframSkref()">Áfram</button>
@@ -114,10 +140,16 @@
   <fieldset ng-show="vm.skref == 6">
     <h3>Ertu með bílpróf?</h3>
     <div class="form-group">
-      <label for="true">Já</label>
-      <input ng-model="vm.newSubmission.drive" type="radio" value='bilprof' name="TRUE" class="form-control" />
-      <label for="false">Nei</label>
-      <input ng-model="vm.newSubmission.drive" type="radio" value='ekkibilprof' name="FALSE" class="form-control" />
+      <ul class="radio-style">
+        <li>
+          <input ng-model="vm.newSubmission.drive" type="radio" value='bilprof' name="TRUE" class="form-control" />
+          <label for="true">Já</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.drive" type="radio" value='ekkibilprof' name="FALSE" class="form-control" />
+          <label for="false">Nei</label>
+        </li>
+      </ul>
     </div>
     <button type="button" ng-click="vm.afturSkref()">Til baka</button>
   </fieldset>
