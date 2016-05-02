@@ -97,8 +97,9 @@ body {
 /*=============___PLANET 1c___=============*/
 .planetMotion1c{
   position:fixed;
-  top:90%;
+  top:80%;
   margin-left:-700px;
+  z-index: -30;
 }
 
 @-webkit-keyframes planet1c{
@@ -194,8 +195,8 @@ body {
 .planetMotion4b{
   -webkit-animation:planet4b 75s linear ;
   animation-iteration-count: 1;
-    -webkit-animation-delay: 100s; /* Chrome, Safari, Opera */
-    animation-delay: 100s;
+    -webkit-animation-delay: 150s; /* Chrome, Safari, Opera */
+    animation-delay: 150s;
 }
 
 
@@ -204,7 +205,7 @@ body {
   position:fixed;
   top:66%;
   margin-left:-700px;
-  z-index: -10;
+  z-index: -12;
 }
 
 @-webkit-keyframes deathStar{
@@ -235,10 +236,10 @@ body {
 }
 
 .fighter1{
-  -webkit-animation:fighter1 8s;
+  -webkit-animation:fighter1 10s;
   animation-iteration-count: 1;
-  -webkit-animation-delay: 80s; /* Chrome, Safari, Opera */
-    animation-delay: 80s;
+  -webkit-animation-delay: 90s; /* Chrome, Safari, Opera */
+    animation-delay: 90s;
     animation-timing-function: cubic-bezier(.6,.82,1,.05);
 
 }
@@ -259,10 +260,10 @@ body {
 }
 
 .fighter2{
-  -webkit-animation:fighter2 8s;
+  -webkit-animation:fighter2 10s;
   animation-iteration-count: 1;
-  -webkit-animation-delay: 81s; /* Chrome, Safari, Opera */
-    animation-delay: 81s;
+  -webkit-animation-delay: 91s; /* Chrome, Safari, Opera */
+    animation-delay: 91s;
     animation-timing-function: cubic-bezier(.5,.82,1,.05);
 
 }
@@ -335,7 +336,7 @@ body {
 
 .fighter3b{
   -webkit-animation:fighter3b 5s infinite;
-  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 30s; /* Chrome, Safari, Opera */
     animation-delay: 30s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
@@ -359,8 +360,32 @@ body {
 
 .falconb{
   -webkit-animation:falconb 5s infinite;
-  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 30s; /* Chrome, Safari, Opera */
     animation-delay: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+
+/*=============___STAR DESTROYER___=============*/
+.stardestroyer{
+  position:fixed;
+/*  left: -300px;*/
+  top:-360px;
+  margin-right:-850px;
+  z-index: -10;
+}
+
+@-webkit-keyframes stardestroyer{
+  0%{top: -20%; left:-160%; transform: rotate(0deg);}
+  100%{top: 40%; left:111%; transform: rotate(-10deg);}
+}
+
+.stardestroyer{
+  -webkit-animation:stardestroyer 45s;
+  -webkit-animation-delay: 80s; /* Chrome, Safari, Opera */
+    animation-delay: 80s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 

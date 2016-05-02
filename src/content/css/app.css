@@ -121,8 +121,9 @@ body {
 /*=============___PLANET 1c___=============*/
 .planetMotion1c {
   position: fixed;
-  top: 90%;
+  top: 80%;
   margin-left: -700px;
+  z-index: -30;
 }
 
 @-webkit-keyframes planet1c {
@@ -251,9 +252,9 @@ body {
   -webkit-animation: planet4b 75s linear;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-delay: 100s;
+  -webkit-animation-delay: 150s;
   /* Chrome, Safari, Opera */
-  animation-delay: 100s;
+  animation-delay: 150s;
 }
 
 /*=============___DEATHSTAR___=============*/
@@ -261,7 +262,7 @@ body {
   position: fixed;
   top: 66%;
   margin-left: -700px;
-  z-index: -10;
+  z-index: -12;
 }
 
 @-webkit-keyframes deathStar {
@@ -307,12 +308,12 @@ body {
 }
 
 .fighter1 {
-  -webkit-animation: fighter1 8s;
+  -webkit-animation: fighter1 10s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-delay: 80s;
+  -webkit-animation-delay: 90s;
   /* Chrome, Safari, Opera */
-  animation-delay: 80s;
+  animation-delay: 90s;
   -webkit-animation-timing-function: cubic-bezier(0.6, 0.82, 1, 0.05);
           animation-timing-function: cubic-bezier(0.6, 0.82, 1, 0.05);
 }
@@ -342,12 +343,12 @@ body {
 }
 
 .fighter2 {
-  -webkit-animation: fighter2 8s;
+  -webkit-animation: fighter2 10s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-delay: 81s;
+  -webkit-animation-delay: 91s;
   /* Chrome, Safari, Opera */
-  animation-delay: 81s;
+  animation-delay: 91s;
   -webkit-animation-timing-function: cubic-bezier(0.5, 0.82, 1, 0.05);
           animation-timing-function: cubic-bezier(0.5, 0.82, 1, 0.05);
 }
@@ -466,7 +467,7 @@ body {
 
 .fighter3b {
   -webkit-animation: fighter3b 5s infinite;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 30s;
   /* Chrome, Safari, Opera */
   animation-delay: 30s;
   -webkit-animation-iteration-count: 1;
@@ -501,9 +502,44 @@ body {
 
 .falconb {
   -webkit-animation: falconb 5s infinite;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 30s;
   /* Chrome, Safari, Opera */
   animation-delay: 30s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+/*=============___STAR DESTROYER___=============*/
+.stardestroyer {
+  position: fixed;
+  /*  left: -300px;*/
+  top: -360px;
+  margin-right: -850px;
+  z-index: -10;
+}
+
+@-webkit-keyframes stardestroyer {
+  0% {
+    top: -20%;
+    left: -160%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    top: 40%;
+    left: 111%;
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.stardestroyer {
+  -webkit-animation: stardestroyer 45s;
+  -webkit-animation-delay: 80s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 80s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
