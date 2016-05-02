@@ -1,3 +1,10 @@
+.personal_info input{
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+}
+
+
 progress {
     width: 100%;
     -webkit-appearance: none;
@@ -60,7 +67,7 @@ input {
 }
 
 .radio-style input[type="radio"]:checked + label {
-    background: red;
+    background: $primaryGreen;
 }
 
 .radio-style label {
@@ -71,6 +78,6 @@ input {
     z-index: 90;
 }
 
-label:hover {
-     background: yellow;
+.radio-style label:hover {
+     background: $primaryGreen;
 }
