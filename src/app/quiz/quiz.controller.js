@@ -51,7 +51,6 @@
       vm.addSubmission =  addSubmission;
       vm.calculateScore = calculateScore;
       vm.removeSubmission = removeSubmission;
-      vm.scorePage = scorePage();
 
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
@@ -198,10 +197,10 @@
         // vm.submissions.$remove(submiss);
       };
 
-      function scorePage() {
-          // url('src/#/quiz/'+ rank)
-          window.location.href = 'src/#/quiz/'+rank;
-        };
+      // function scorePage() {
+      //     // url('src/#/quiz/'+ rank)
+      //     window.location.href = 'src/#/quiz/'+rank;
+      //   };
 
       function removeSubmission(submiss) {
         vm.submissions.$remove(submiss);
