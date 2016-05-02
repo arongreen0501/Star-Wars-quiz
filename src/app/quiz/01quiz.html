@@ -1,5 +1,6 @@
 <form class="form-inline party-form">
   <fieldset ng-show="vm.skref == 1">
+    <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
     <div class="form-group">
       <label for="">Full name</label>
       <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" />
@@ -19,12 +20,20 @@
   <fieldset ng-show="vm.skref == 2">
     <h3>Gender</h3>
     <div class="form-group">
-      <label for="male">Male</label>
-      <input ng-model="vm.newSubmission.gender" type="radio" value="male" name="male" class="form-control" />
-      <label for="female">Female</label>
-      <input ng-model="vm.newSubmission.gender" type="radio" value="female" name="female" class="form-control" />
-      <label for="other">Other</label>
-      <input ng-model="vm.newSubmission.gender" type="radio" value="other" name="other" class="form-control" />
+      <ul class="radio-style">
+        <li>
+          <input ng-model="vm.newSubmission.gender" type="radio" value="male" name="male" class="form-control" />
+          <label for="male">Male</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.gender" type="radio" value="female" name="female" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="female">Female</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.gender" type="radio" value="other" name="other" class="form-control" />
+          <label for="other">Other</label>
+        </li>
+      </ul>
     </div>
     <button type="button" ng-click="vm.afturSkref()">Til baka</button>
     <button type="button" ng-click="vm.aframSkref()">Áfram</button>
@@ -33,18 +42,32 @@
   <fieldset ng-show="vm.skref == 3">
     <h3>Haircolor</h3>
     <div class="form-group">
-      <label for="blonde">Blonde</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="blonde" name="blonde" class="form-control" />
-      <label for="black">Black</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="black" name="black" class="form-control" />
-      <label for="brown">Brown</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="brown" name="brown" class="form-control" />
-      <label for="gray">Gray or white</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="gray" name="blonde" class="form-control" />
-      <label for="red">Red</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="red" name="blonde" class="form-control" />
-      <label for="other">None or other color</label>
-      <input ng-model="vm.newSubmission.hair" type="radio" value="other" name="blonde" class="form-control" />
+      <ul class="radio-style">
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="blonde" name="blonde" class="form-control" />
+          <label for="blonde">Blonde</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="black" name="black" class="form-control" />
+          <label for="black">Black</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="brown" name="brown" class="form-control" />
+          <label for="brown">Brown</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="gray" name="blonde" class="form-control" />
+          <label for="gray">Gray or white</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="red" name="blonde" class="form-control" />
+          <label for="red">Red</label>
+        </li>
+        <li>
+          <input ng-model="vm.newSubmission.hair" type="radio" value="other" name="blonde" class="form-control" />
+          <label for="other">None or other color</label>
+        </li>
+      </ul>
     </div>
     <button type="button" ng-click="vm.afturSkref()">Til baka</button>
     <button type="button" ng-click="vm.aframSkref()">Áfram</button>
