@@ -18,6 +18,11 @@
         controller: 'quizController',
         controllerAs: 'vm'
       })
+      $routeProvider.when('/', {
+        templateUrl: 'app/quiz/result.html',
+        controller: 'quizController',
+        controllerAs: 'vm'
+      })
       // $routeProvider.when('/haircolor', {
       //   templateUrl: 'app/quiz/03hair.html',
       //   controller: 'quizController',

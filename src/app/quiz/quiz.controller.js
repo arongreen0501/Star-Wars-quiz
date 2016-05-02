@@ -58,7 +58,12 @@
 
 
       function aframSkref() {
-        vm.skref++;
+        if(vm.skref == 6) {
+          addSubmission();
+          //calculatescore;
+        } else {
+          vm.skref++;
+        }
       }
 
       function afturSkref() {
