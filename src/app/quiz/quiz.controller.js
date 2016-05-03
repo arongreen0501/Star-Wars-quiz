@@ -12,6 +12,34 @@
 
       var fireSubmissions = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
 
+      // Attach an asynchronous callback to read the data at our posts reference
+
+      // fireSubmissions.on("value", function(snapshot) {
+      //   console.log(snapshot.val());
+      // }, function (errorObject) {
+      //   console.log("The read failed: " + errorObject.code);
+      // });
+
+      // Retrieve new posts as they are added to our database
+
+      // fireSubmissions.on("child_added", function(snapshot, prevChildKey) {
+      //   var newPost = snapshot.val();
+      //   console.log("Name: " + newPost.name);
+      //   console.log("Height: " + newPost.height);
+      //   console.log("weight: " + newPost.weight);
+      //   console.log("Gender: " + newPost.gender);
+      //   console.log("Hair: " + newPost.hair);
+      //   console.log("Eyes: " + newPost.eyes);
+      //   console.log("Residence: " + newPost.residence);
+      //   console.log("Drive: " + newPost.drive);
+      //   console.log("Previous Post ID: " + prevChildKey);
+      // });
+
+      fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
+        var newPost = snapshot.val();
+        console.log(newPost.name, snapshot.key());
+      });
+
       function Submission() {
         this.name = '';
         this.weight = '';
