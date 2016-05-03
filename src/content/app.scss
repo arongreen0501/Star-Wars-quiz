@@ -4,15 +4,18 @@
 @import "incl/litir.scss";
 @import "incl/mixins.scss";
 @import "incl/inputs.scss";
+@import "incl/animation.scss";
 
 body {
-  background-color: black;
-  font-family: 'Work Sans', sans-serif;
-  color: white;
+	background-image: url("../img/backr1.jpg");
+	background-size: cover;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
 }
 
 .container {
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
+  z-index: 999 !important;
 }

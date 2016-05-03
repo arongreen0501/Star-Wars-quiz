@@ -1,0 +1,379 @@
+// STILLINGAR FYRIR ELEMENT SEM ANIMATE'AST Í BAKGRUNNI
+
+
+
+/*=============___FIGHTER 1c___=============*/
+.fighter1c{
+  position:fixed;
+  top:-400px;
+  margin-right:-300px;
+  z-index: -10;
+}
+
+.fighter1c img{
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+
+
+@-webkit-keyframes fighter1c{
+  0%{top: 40%; left:-50%; transform: rotate(0deg);}
+  100%{top: 25%; left:140%; transform: rotate(-25deg);}
+}
+
+.fighter1c{
+  -webkit-animation:fighter1c 8s;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(.6,.82,1,.05);
+
+}
+
+
+/*=============___FIGHTER 2d___=============*/
+.fighter2d{
+  position:fixed;
+  top:-200px;
+  margin-right:-400px;
+  z-index: -11;
+}
+
+.fighter2d img{
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+@-webkit-keyframes fighter2d{
+  0%{top: 30%; left:-55%; transform: rotate(0deg);}
+  100%{top: 20%; left:140%; transform: rotate(-25deg);}
+}
+
+.fighter2d{
+  -webkit-animation:fighter2d 8s;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(.5,.82,1,.05);
+
+}
+
+
+/*=============___PLANET 1b___=============*/
+.planetMotion1b{
+  position:fixed;
+  top:-42%;
+  margin-left:-700px;
+}
+
+@-webkit-keyframes planet1b{
+  0%{left:0%;}
+  100%{left:250%;}
+}
+
+.planetMotion1b{
+  -webkit-animation:planet1b 90s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 80s; /* Chrome, Safari, Opera */
+    animation-delay: 80s;
+}
+
+
+/*=============___PLANET 1c___=============*/
+.planetMotion1c{
+  position:fixed;
+  top:80%;
+  margin-left:-700px;
+  z-index: -30;
+}
+
+@-webkit-keyframes planet1c{
+  0%{left:0%;}
+  100%{left:250%;}
+}
+
+.planetMotion1c{
+  -webkit-animation:planet1c 100s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 60s; /* Chrome, Safari, Opera */
+    animation-delay: 60s;
+}
+
+
+/*=============___PLANET 2___=============*/
+.planetMotion2{
+  position:fixed;
+  top:70%;
+  margin-left:-200px;
+  z-index: -15;
+}
+
+@-webkit-keyframes planet2{
+  0%{left:0%;}
+  100%{left:200%;}
+}
+
+.planetMotion2{
+  -webkit-animation:planet2 100s linear ;
+  animation-iteration-count: 3;
+    -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
+    animation-delay: 10s;
+}
+
+
+/*=============___PLANET 3___=============*/
+.planetMotion3{
+  position:fixed;
+  top:-42%;
+  margin-left:-700px;
+  z-index: -15;
+}
+
+@-webkit-keyframes planet3{
+  0%{left:-50%;}
+  100%{left:250%;}
+}
+
+.planetMotion3{
+  -webkit-animation:planet3 85s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 40s; /* Chrome, Safari, Opera */
+    animation-delay: 40s;
+}
+
+
+/*=============___PLANET 4___=============*/
+.planetMotion4{
+  position:fixed;
+  top:-40%;
+  margin-left:-800px;
+  padding-right: 100px;
+  z-index: -15;
+}
+
+@-webkit-keyframes planet4{
+  0%{left:-30%; transform: rotate(10deg);}
+  100%{left:260%; transform: rotate(170deg);}
+}
+
+.planetMotion4{
+  -webkit-animation:planet4 75s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+    animation-delay: 0s;
+}
+
+
+/*=============___PLANET 4b___=============*/
+.planetMotion4b{
+  position:fixed;
+  top:70%;
+  margin-left:-600px;
+  z-index: -15;
+}
+
+@-webkit-keyframes planet4b{
+  0%{left:0%; transform: rotate(0deg);}
+  100%{left:230%; transform: rotate(-90deg);}
+}
+
+.planetMotion4b{
+  -webkit-animation:planet4b 75s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 150s; /* Chrome, Safari, Opera */
+    animation-delay: 150s;
+}
+
+
+/*=============___DEATHSTAR___=============*/
+.deathStar{
+  position:fixed;
+  top:66%;
+  margin-left:-700px;
+  z-index: -12;
+}
+
+@-webkit-keyframes deathStar{
+  0%{left:0%;}
+  100%{left:250%;}
+}
+
+.deathStar{
+  -webkit-animation:deathStar 78s linear ;
+  animation-iteration-count: 1;
+    -webkit-animation-delay: 30s; /* Chrome, Safari, Opera */
+    animation-delay: 30s;
+}
+
+
+/*=============___FIGHTER 1___=============*/
+.fighter1{
+  position:fixed;
+  top:-400px;
+  margin-right:-300px;
+  z-index: -10;
+}
+
+@-webkit-keyframes fighter1{
+  0%{top: 25%; right:0%; transform: rotate(-25deg);}
+  100%{top: 100%; right:140%; transform: rotate(0deg);}
+}
+
+.fighter1{
+  -webkit-animation:fighter1 10s;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 90s; /* Chrome, Safari, Opera */
+    animation-delay: 90s;
+    animation-timing-function: cubic-bezier(.6,.82,1,.05);
+
+}
+
+
+/*=============___FIGHTER 2___=============*/
+.fighter2{
+  position:fixed;
+  top:-200px;
+  margin-right:-400px;
+  z-index: -11;
+}
+
+@-webkit-keyframes fighter2{
+  0%{top: 35%; right:3%; transform: rotate(-20deg);}
+  100%{top: 130%; right:140%; transform: rotate(2deg);}
+}
+
+.fighter2{
+  -webkit-animation:fighter2 10s;
+  animation-iteration-count: 1;
+  -webkit-animation-delay: 91s; /* Chrome, Safari, Opera */
+    animation-delay: 91s;
+    animation-timing-function: cubic-bezier(.5,.82,1,.05);
+
+}
+
+
+/*=============___FIGHTER 3___=============*/
+.fighter3{
+  position:fixed;
+  top:-200px;
+  margin-right:-600px;
+  z-index: -10;
+}
+
+@-webkit-keyframes fighter3{
+  0%{top: 85%; right:0%; transform: rotate(-10deg);}
+  75%{top: 75%; right:75%; transform: rotate(0deg);}
+  80%{top: 75%; right:75%; transform: rotate(0deg);}
+  100%{top: 65%; right:225%; transform: rotate(10deg);}
+}
+
+.fighter3{
+  -webkit-animation:fighter3 10s infinite;
+  -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+/*=============___FALCON___=============*/
+.falcon{
+  position:fixed;
+  top:-200px;
+  margin-right:-350px;
+  z-index: -11;
+}
+
+@-webkit-keyframes falcon{
+  0%{top: 85%; right:0%; transform: rotate(0deg);}
+  80%{top: 75%; right:75%; transform: rotate(10deg);}
+  100%{top: 65%; right:180%; transform: rotate(20deg);}
+}
+
+.falcon{
+  -webkit-animation:falcon 10s infinite;
+  -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
+    animation-delay: 10s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+/*=============___FIGHTER 3b___=============*/
+.fighter3b{
+  position:fixed;
+  top:-200px;
+  margin-right:-600px;
+  z-index: -11;
+}
+
+@-webkit-keyframes fighter3b{
+  0%{top: 110%; right:109%; transform: rotate(40deg);}
+  100%{top: -60%; right:139%; transform: rotate(70deg);}
+}
+
+.fighter3b{
+  -webkit-animation:fighter3b 5s infinite;
+  -webkit-animation-delay: 30s; /* Chrome, Safari, Opera */
+    animation-delay: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+
+/*=============___FALCONb___=============*/
+.falconb{
+  position:fixed;
+  top:-200px;
+  margin-right:-350px;
+  z-index: -10;
+}
+
+@-webkit-keyframes falconb{
+  0%{top: 130%; right:80%; transform: rotate(60deg);}
+  100%{top: -40%; right:111%; transform: rotate(75deg);}
+}
+
+.falconb{
+  -webkit-animation:falconb 5s infinite;
+  -webkit-animation-delay: 30s; /* Chrome, Safari, Opera */
+    animation-delay: 30s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+
+
+/*=============___STAR DESTROYER___=============*/
+.stardestroyer{
+  position:fixed;
+  top:-360px;
+  margin-right:-850px;
+  z-index: -10;
+}
+
+@-webkit-keyframes stardestroyer{
+  0%{top: -20%; left:-160%; transform: rotate(0deg);}
+  100%{top: 40%; left:111%; transform: rotate(-10deg);}
+}
+
+.stardestroyer{
+  -webkit-animation:stardestroyer 45s;
+  -webkit-animation-delay: 80s; /* Chrome, Safari, Opera */
+    animation-delay: 80s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
