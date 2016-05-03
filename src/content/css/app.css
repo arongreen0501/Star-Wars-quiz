@@ -435,9 +435,10 @@ fieldset {
 input {
   background: transparent;
   border: 2px solid #0BAA8E;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #fff;
   padding-left: 20px;
+  height: 40px;
 }
 
 .radio-style {
@@ -1021,7 +1022,6 @@ input {
 
 body {
   background-image: url("../img/backr1.jpg");
-  background-size: cover;
   background-color: black;
   font-family: 'Work Sans', sans-serif;
   color: white;

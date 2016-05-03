@@ -30,9 +30,10 @@ fieldset {
 input {
     background: transparent;
     border: 2px solid $primaryGreen;
-    border-radius: 10px;
+    border-radius: 20px;
     color: #fff;
     padding-left: 20px;
+    height: 40px;
 }
 
 .radio-style {
