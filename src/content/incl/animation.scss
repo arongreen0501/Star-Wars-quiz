@@ -1,15 +1,10 @@
-body {
-	background-image: url("../img/backr1.jpg");
-	background-size: cover;
-	margin: 0 auto;
-}
+// STILLINGAR FYRIR ELEMENT SEM ANIMATE'AST Í BAKGRUNNI
 
 
 
 /*=============___FIGHTER 1c___=============*/
 .fighter1c{
   position:fixed;
-/*  left: -300px;*/
   top:-400px;
   margin-right:-300px;
   z-index: -10;
@@ -44,7 +39,6 @@ body {
 /*=============___FIGHTER 2d___=============*/
 .fighter2d{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-400px;
   z-index: -11;
@@ -224,7 +218,6 @@ body {
 /*=============___FIGHTER 1___=============*/
 .fighter1{
   position:fixed;
-/*  left: -300px;*/
   top:-400px;
   margin-right:-300px;
   z-index: -10;
@@ -248,7 +241,6 @@ body {
 /*=============___FIGHTER 2___=============*/
 .fighter2{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-400px;
   z-index: -11;
@@ -272,7 +264,6 @@ body {
 /*=============___FIGHTER 3___=============*/
 .fighter3{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-600px;
   z-index: -10;
@@ -298,7 +289,6 @@ body {
 /*=============___FALCON___=============*/
 .falcon{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-350px;
   z-index: -11;
@@ -323,7 +313,6 @@ body {
 /*=============___FIGHTER 3b___=============*/
 .fighter3b{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-600px;
   z-index: -11;
@@ -347,7 +336,6 @@ body {
 /*=============___FALCONb___=============*/
 .falconb{
   position:fixed;
-/*  left: -300px;*/
   top:-200px;
   margin-right:-350px;
   z-index: -10;
@@ -371,7 +359,6 @@ body {
 /*=============___STAR DESTROYER___=============*/
 .stardestroyer{
   position:fixed;
-/*  left: -300px;*/
   top:-360px;
   margin-right:-850px;
   z-index: -10;
