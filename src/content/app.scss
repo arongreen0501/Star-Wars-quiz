@@ -5,9 +5,10 @@
 @import "incl/animation.scss";
 
 body {
-  background-color: black;
-  font-family: 'Work Sans', sans-serif;
-  color: white;
+	background-image: url("../img/backr1.jpg");
+	background-size: cover;
+	font-family: 'Work Sans', sans-serif;
+	color: white;
 }
 
 .container {

@@ -547,7 +547,8 @@ body {
 }
 
 body {
-  background-color: black;
+  background-image: url("../img/backr1.jpg");
+  background-size: cover;
   font-family: 'Work Sans', sans-serif;
   color: white;
 }
