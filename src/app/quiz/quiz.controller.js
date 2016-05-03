@@ -35,10 +35,7 @@
       //   console.log("Previous Post ID: " + prevChildKey);
       // });
 
-      fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
-        var newPost = snapshot.val();
-        console.log(newPost.name, snapshot.key());
-      });
+
 
       function Submission() {
         this.name = '';
@@ -82,6 +79,11 @@
       function addSubmission() {
         vm.submissions.$add(vm.newSubmission);
         vm.newSubmission = new Submission();
+
+        fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
+          var newPost = snapshot.val();
+          console.log(newPost.name, snapshot.key());
+        });
       }
 
 
