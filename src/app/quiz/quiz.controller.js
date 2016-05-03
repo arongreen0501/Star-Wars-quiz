@@ -38,9 +38,9 @@
       }
 
 
-      function aframSkref() {
+      function aframSkref(user) {
         if(vm.skref == 6) {
-          addSubmission();
+          addSubmission(user);
           //calculatescore;
         } else {
           vm.skref++;
