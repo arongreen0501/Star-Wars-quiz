@@ -5,8 +5,11 @@
 @import "incl/mixins.scss";
 @import "incl/inputs.scss";
 @import "incl/buttons.scss";
+@import "incl/animation.scss";
 
 body {
+  background-image: url("../img/backr1.jpg");
+  background-size: cover;
   background-color: black;
   font-family: 'Work Sans', sans-serif;
   color: white;
