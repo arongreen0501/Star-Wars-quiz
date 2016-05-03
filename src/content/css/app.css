@@ -1048,7 +1048,7 @@ input {
           animation-timing-function: linear;
 }
 
-.fieldset {
+.formContainer fieldset {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
   /* Firefox < 16 */
