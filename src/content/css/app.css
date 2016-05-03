@@ -499,6 +499,21 @@ input {
 
 .radio-style label:hover {
   background: #0BAA8E;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nextButton {
+  float: right;
+  margin-top: 20px;
+  background: #0BAA8E;
+  border-radius: 20px;
+  color: #fff;
+  width: 180px;
+  border: 0;
+  text-transform: uppercase;
+  height: 40px;
+  cursor: pointer;
 }
 
 /*=============___FIGHTER 1c___=============*/
