@@ -116,7 +116,7 @@
         } else {
           rank = rank + 22;
         };
-        var rank3 = rank - rank2;
+        var rank3 = rank - rank2-rank1;
         console.log('Þyngd: ' + rank3 + ' stig');
 
         if (submiss.residence == 'reykjavik') {
@@ -130,7 +130,7 @@
         } else {
           rank = rank + 13;
         };
-        var rank4 = rank - rank3;
+        var rank4 = rank - rank3-rank2-rank1;
         console.log('Kjördæmi: ' + rank4 + ' stig');
 
         if (submiss.gender == 'male') {
@@ -140,7 +140,7 @@
         } else {
           rank = rank + 10;
         };
-        var rank5 = rank - rank4;
+        var rank5 = rank - rank4-rank3-rank2-rank1;
         console.log('Kyn: ' + rank5 + ' stig');
 
         if (submiss.drive == 'bilprof') {
@@ -148,7 +148,7 @@
         } else {
           rank = rank + 0;
         };
-        var rank6 = rank - rank5;
+        var rank6 = rank - rank5-rank4-rank3-rank2-rank1;
         console.log('Bílpróf: ' + rank6 + ' stig');
 
         if (submiss.hair == 'other') {
@@ -164,7 +164,7 @@
         } else {
           rank = rank + 17;
         };
-        var rank7 = rank - rank6;
+        var rank7 = rank - rank6-rank5-rank4-rank3-rank2-rank1;
         console.log('Hárlitur: ' + rank7 + ' stig');
 
         if (submiss.eyes == 'blue') {
@@ -180,7 +180,7 @@
         } else {
           rank = rank + 14;
         };
-        var rank8 = rank - rank7;
+        var rank8 = rank - rank7-rank6-rank5-rank4-rank3-rank2-rank1;
         console.log('Augnlitur: ' + rank8 + ' stig');
 
         console.log(submiss.name + 'Samtals ' + rank + ' points');
