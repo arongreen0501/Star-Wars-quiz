@@ -55,6 +55,11 @@
       vm.skref = 1;
       vm.aframSkref = aframSkref;
       vm.afturSkref = afturSkref;
+      vm.errorMsg = errorMsg;
+
+      function errorMsg() {
+
+      }
 
 
       function aframSkref() {
