@@ -1,159 +1,161 @@
 <form class="form-inline party-form" name="myAwesomeForm">
   <p>Spurning {{ vm.skref }} af 6</p>
   <progress value="{{vm.skref*6}}" max="36"></progress>
-  <fieldset class="personal_info" ng-show="vm.skref == 1">
-    <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
-    <div class="form-group">
-      <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" required/>
-    </div>
-    <div class="form-group">
-      <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" />
-    </div>
-    <div class="form-group">
-      <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" />
-    </div>
+  <div class="formContainer">
+    <fieldset class="personal_info" ng-show="vm.skref == 1">
+      <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
+      <div class="form-group">
+        <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" required/>
+      </div>
+      <div class="form-group">
+        <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" />
+      </div>
+      <div class="form-group">
+        <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" />
+      </div>
 
-    <button type="button" ng-click="vm.aframSkref()">Áfram</button>
+      <button type="button" ng-click="vm.aframSkref()">Áfram</button>
 
-  </fieldset>
+    </fieldset>
 
-  <fieldset ng-show="vm.skref == 2">
-    <h3>Gender</h3>
-    <div class="form-group">
-      <ul class="radio-style">
-        <li>
-          <input ng-model="vm.newSubmission.gender" type="radio" id="male" value="male" name="male" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="male">Male</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.gender" type="radio" id="female" value="female" name="female" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="female">Female</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.gender" type="radio" id="other" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="other">Other</label>
-        </li>
-      </ul>
-    </div>
-    <button type="button" ng-click="vm.afturSkref()">Til baka</button>
-  </fieldset>
+    <fieldset ng-show="vm.skref == 2">
+      <h3>Gender</h3>
+      <div class="form-group">
+        <ul class="radio-style">
+          <li>
+            <input ng-model="vm.newSubmission.gender" type="radio" id="male" value="male" name="male" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="male">Male</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.gender" type="radio" id="female" value="female" name="female" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="female">Female</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.gender" type="radio" id="other" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="other">Other</label>
+          </li>
+        </ul>
+      </div>
+      <button type="button" ng-click="vm.afturSkref()">Til baka</button>
+    </fieldset>
 
-  <fieldset ng-show="vm.skref == 3">
-    <h3>Haircolor</h3>
-    <div class="form-group">
-      <ul class="radio-style">
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="blonde" value="blonde" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="blonde">Blonde</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="black" value="black" name="black" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="black">Black</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="brown" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="brown">Brown</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="gray" value="gray" name="gray" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="gray">Gray or white</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="red" value="red" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="red">Red</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.hair" type="radio" id="noneOrOther" value="other" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="noneOrOther">None or other color</label>
-        </li>
-      </ul>
-    </div>
-    <button type="button" ng-click="vm.afturSkref()">Til baka</button>
-  </fieldset>
+    <fieldset ng-show="vm.skref == 3">
+      <h3>Haircolor</h3>
+      <div class="form-group">
+        <ul class="radio-style">
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="blonde" value="blonde" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="blonde">Blonde</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="black" value="black" name="black" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="black">Black</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="brown" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="brown">Brown</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="gray" value="gray" name="gray" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="gray">Gray or white</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="red" value="red" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="red">Red</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.hair" type="radio" id="noneOrOther" value="other" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="noneOrOther">None or other color</label>
+          </li>
+        </ul>
+      </div>
+      <button type="button" ng-click="vm.afturSkref()">Til baka</button>
+    </fieldset>
 
-  <fieldset ng-show="vm.skref == 4">
-    <h3>Eye color</h3>
-    <div class="form-group">
-      <ul class="radio-style">
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="blue-eyes" value="blue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="blue-eyes">Blue</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="grayblue-eyes" value="grayblue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="grayblue-eyes">Gray-blue</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="brown-eyes" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="brown-eyes">Brown</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="lightbrown-eyes" value="lightbrown" name="lightbrown" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="lightbrown-eyes">Lightbrown</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="green-eyes" value="green" name="green" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="green-eyes">Green</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.eyes" type="radio" id="other-eyes" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="other-eyes">Other</label>
-        </li>
-      </ul>
-    </div>
-    <button type="button" ng-click="vm.afturSkref()">Til baka</button>
-  </fieldset>
+    <fieldset ng-show="vm.skref == 4">
+      <h3>Eye color</h3>
+      <div class="form-group">
+        <ul class="radio-style">
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="blue-eyes" value="blue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="blue-eyes">Blue</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="grayblue-eyes" value="grayblue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="grayblue-eyes">Gray-blue</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="brown-eyes" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="brown-eyes">Brown</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="lightbrown-eyes" value="lightbrown" name="lightbrown" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="lightbrown-eyes">Lightbrown</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="green-eyes" value="green" name="green" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="green-eyes">Green</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="other-eyes" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="other-eyes">Other</label>
+          </li>
+        </ul>
+      </div>
+      <button type="button" ng-click="vm.afturSkref()">Til baka</button>
+    </fieldset>
 
-  <fieldset ng-show="vm.skref == 5">
-    <h3>Kjördæmi</h3>
-    <div class="form-group">
-      <ul class="radio-style">
-        <li>
-        <input ng-model="vm.newSubmission.residence" type="radio" id="reykjavik" value="reykjavik" name="reykjavik" class="form-control" ng-click="vm.aframSkref()"/>
-        <label for="reykjavik">Reykjavík (norður og suður)</label>
-        </li>
-        <li>
-        <input ng-model="vm.newSubmission.residence" type="radio" id="sudvestur" value="sudvestur" name="sudvestur" class="form-control" ng-click="vm.aframSkref()"/>
-        <label for="sudvestur">Suðvestur</label>
-        </li>
-        <li>
-        <input ng-model="vm.newSubmission.residence" type="radio" id="nordvestur" value="nordvestur" name="nordvestur" class="form-control" ng-click="vm.aframSkref()"/>
-        <label for="nordvestur">Norðvestur</label>
-        </li>
-        <li>
-        <input ng-model="vm.newSubmission.residence" type="radio" id="nordaustur" value="nordaustur" name="nordaustur" class="form-control" ng-click="vm.aframSkref()"/>
-        <label for="nordaustur">Norðaustur</label>
-        </li>
-        <li>
-        <input ng-model="vm.newSubmission.residence" type="radio" id="sudur" value="sudur" name="sudur" class="form-control" ng-click="vm.aframSkref()"/>
-        <label for="sudur">Suður</label>
-        </li>
-      </ul>
-    </div>
-    <button type="button" ng-click="vm.afturSkref()">Til baka</button>
-  </fieldset>
+    <fieldset ng-show="vm.skref == 5">
+      <h3>Kjördæmi</h3>
+      <div class="form-group">
+        <ul class="radio-style">
+          <li>
+          <input ng-model="vm.newSubmission.residence" type="radio" id="reykjavik" value="reykjavik" name="reykjavik" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="reykjavik">Reykjavík (norður og suður)</label>
+          </li>
+          <li>
+          <input ng-model="vm.newSubmission.residence" type="radio" id="sudvestur" value="sudvestur" name="sudvestur" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="sudvestur">Suðvestur</label>
+          </li>
+          <li>
+          <input ng-model="vm.newSubmission.residence" type="radio" id="nordvestur" value="nordvestur" name="nordvestur" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="nordvestur">Norðvestur</label>
+          </li>
+          <li>
+          <input ng-model="vm.newSubmission.residence" type="radio" id="nordaustur" value="nordaustur" name="nordaustur" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="nordaustur">Norðaustur</label>
+          </li>
+          <li>
+          <input ng-model="vm.newSubmission.residence" type="radio" id="sudur" value="sudur" name="sudur" class="form-control" ng-click="vm.aframSkref()"/>
+          <label for="sudur">Suður</label>
+          </li>
+        </ul>
+      </div>
+      <button type="button" ng-click="vm.afturSkref()">Til baka</button>
+    </fieldset>
 
-  <fieldset ng-show="vm.skref == 6">
-    <h3>Ertu með bílpróf?</h3>
-    <div class="form-group">
-      <ul class="radio-style">
-        <li>
-          <input ng-model="vm.newSubmission.drive" type="radio" id="true" value='bilprof' name="TRUE" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="true">Já</label>
-        </li>
-        <li>
-          <input ng-model="vm.newSubmission.drive" type="radio" id="false" value='ekkibilprof' name="FALSE" class="form-control" ng-click="vm.aframSkref()"/>
-          <label for="false">Nei</label>
-        </li>
-      </ul>
-    </div>
-    <button type="button" ng-click="vm.afturSkref()">Til baka</button>
-    <button type="button" ng-click="vm.aframSkref()">Áfram</button>
-  </fieldset>
+    <fieldset ng-show="vm.skref == 6">
+      <h3>Ertu með bílpróf?</h3>
+      <div class="form-group">
+        <ul class="radio-style">
+          <li>
+            <input ng-model="vm.newSubmission.drive" type="radio" id="true" value='bilprof' name="TRUE" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="true">Já</label>
+          </li>
+          <li>
+            <input ng-model="vm.newSubmission.drive" type="radio" id="false" value='ekkibilprof' name="FALSE" class="form-control" ng-click="vm.aframSkref()"/>
+            <label for="false">Nei</label>
+          </li>
+        </ul>
+      </div>
+      <button type="button" ng-click="vm.afturSkref()">Til baka</button>
+      <button type="button" ng-click="vm.aframSkref()">Áfram</button>
+    </fieldset>
 
 
 
-  <button type="submit" class="btn btn-primary" ng-click="vm.addSubmission()">Submit</button>
+    <button type="submit" class="btn btn-primary" ng-click="vm.addSubmission()">Submit</button>
+  </div>
 </form>
 
 
