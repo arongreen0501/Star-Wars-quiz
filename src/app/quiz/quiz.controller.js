@@ -80,14 +80,30 @@
         vm.submissions.$add(vm.newSubmission);
         vm.newSubmission = new Submission();
 
-        fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
-          var newPost = snapshot.val();
-          console.log(newPost.name, snapshot.key());
-        });
+        // fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
+        //   var newPost = snapshot.val();
+        //   console.log(newPost.name, snapshot.key());
+        // });
       }
 
 
       function calculateScore(submiss) {
+
+
+        fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
+          var newPost = snapshot.val();
+          console.log('Name: ' + newPost.name);
+          console.log('Height: ' + newPost.height);
+          console.log('Weight: ' + newPost.weight);
+          console.log('Gender: ' + newPost.gender);
+          console.log('Hair: ' + newPost.hair);
+          console.log('Eyes: ' + newPost.eyes);
+          console.log('Residence: ' + newPost.residence);
+          console.log('Drive: ' + newPost.drive);
+          console.log('ID: ' + snapshot.key());
+        });
+
+
         var rank = 0;
 
         if (submiss.name.length <= 5) {
@@ -213,7 +229,7 @@
         var rank8 = rank - rank7-rank6-rank5-rank4-rank3-rank2-rank1;
         console.log('Augnlitur: ' + rank8 + ' stig');
 
-        console.log(submiss.name + 'Samtals ' + rank + ' points');
+        console.log(submiss.name + ' Samtals ' + rank + ' points');
       }
 
 
