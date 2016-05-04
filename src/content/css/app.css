@@ -1082,6 +1082,57 @@ input {
 
 /* Opera < 12.1 */
 
+.results p {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p.results-score {
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: -20px;
+}
+
+.results-card {
+  background-color: #0BAA8E;
+  border-radius: 10px;
+  padding: 5px 20px;
+  position: relative;
+  height: 200px;
+  margin-top: 20px;
+}
+
+p .stig {
+  position: absolute;
+  bottom: -25px;
+  right: 10px;
+  font-weight: 900;
+  font-size: 150px;
+  color: #62DCC3;
+  z-index: 3;
+}
+
+.results-card h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 10px;
+  width: 70%;
+  line-height: 0.8;
+  font-weight: 900;
+  z-index: 9;
+}
+
+.results-card p {
+  font-weight: 500;
+  line-height: 1;
+  margin-top: -20px;
+}
+
+.results-card-back {
+  background-color: #62DCC3;
+}
+
 body {
   background-image: url("../img/backr1.jpg");
   background-color: black;
