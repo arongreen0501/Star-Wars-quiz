@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="21px" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="-7.10542736e-15 0.330441176 23.5020175 0.330441176 23.5020175 21 -7.10542736e-15 21"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-6-Copy-6" transform="translate(-31.000000, -651.000000)">
+            <g id="Page-1-Copy-3" transform="translate(43.000000, 661.500000) rotate(-180.000000) translate(-43.000000, -661.500000) translate(31.000000, 651.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M-11,10.5423088 C-11,11.0537206 -10.5873684,11.4687794 -10.0789474,11.4687794 L20.4834211,11.4687794 L12.5777193,19.4209853 C12.397807,19.6019559 12.309386,19.8385147 12.309386,20.0750735 C12.309386,20.3110147 12.397807,20.5500441 12.5777193,20.7285441 C12.9375439,21.0904853 13.5208772,21.0904853 13.8807018,20.7285441 L23.2324561,11.32425 C23.5922807,10.9623088 23.5922807,10.3755441 23.2324561,10.0142206 L13.8782456,0.601897059 C13.5184211,0.239955882 12.9350877,0.239955882 12.5758772,0.601897059 C12.2160526,0.963838235 12.2160526,1.54998529 12.5758772,1.91192647 L20.2341228,9.61583824 L-10.0789474,9.61583824 C-10.5873684,9.61583824 -11,10.0308971 -11,10.5423088" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
