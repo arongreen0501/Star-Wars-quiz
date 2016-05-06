@@ -423,9 +423,8 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background: #0BAA8E;
-  /* Looks great, now animating it */
-  background-size: 25px 14px, 100% 100%, 100% 100%;
-  -webkit-animation: move 5s linear 0 infinite;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
 }
 
 fieldset {
@@ -506,14 +505,117 @@ input {
 .nextButton {
   float: right;
   margin-top: 20px;
-  background: #0BAA8E;
   border-radius: 20px;
-  color: #fff;
   width: 180px;
-  border: 0;
+  border: 1px;
+  border-color: #0BAA8E;
+  background-color: #0BAA8E;
+  color: white;
   text-transform: uppercase;
   height: 40px;
   cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nextButton:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nextButton:active {
+  border-color: #0BAA8E;
+}
+
+.nextButton:hover {
+  background: #62DCC3;
+}
+
+.nextButton:before {
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nextButton:before {
+  right: 20%;
+  opacity: 0;
+  top: -12px;
+}
+
+.nextButton:hover:before {
+  right: 10%;
+  opacity: 1;
+}
+
+.backButton {
+  float: left;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 180px;
+  border: 1px;
+  border-color: #0BAA8E;
+  background-color: #0BAA8E;
+  color: white;
+  text-transform: uppercase;
+  height: 40px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.backButton:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.backButton:active {
+  border-color: #0BAA8E;
+}
+
+.backButton:hover {
+  background: #62DCC3;
+}
+
+.backButton:before {
+  position: absolute;
+  height: 100%;
+  font-size: 125%;
+  line-height: 3.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.backButton:before {
+  left: 20%;
+  opacity: 0;
+  top: -11px;
+}
+
+.backButton:hover:before {
+  left: 10%;
+  opacity: 1;
+}
+
+.icon-arrow-right:before {
+  content: url("../img/arrow-right.svg");
+}
+
+.icon-arrow-left:before {
+  content: url("../img/arrow-left.svg");
 }
 
 /*=============___FIGHTER 1c___=============*/
