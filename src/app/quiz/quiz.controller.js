@@ -61,8 +61,8 @@
         var userID = fireSubmissions.push(vm.newSubmission);
         vm.newSubmission = new Submission();
         // user = vm.newSubmission;
-        console.log(user);
-        console.log(userID.key());
+        console.log(user, 'user ID: '+userID.key());
+        // console.log(userID.key());
 
         // var newUser = fireSubmissions.push();
         // newUser.set({'name': 'user.name', 'weight': 'user.weight'});
