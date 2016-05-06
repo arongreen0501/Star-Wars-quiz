@@ -423,9 +423,8 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
   background: #0BAA8E;
-  /* Looks great, now animating it */
-  background-size: 25px 14px, 100% 100%, 100% 100%;
-  -webkit-animation: move 5s linear 0 infinite;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
 }
 
 fieldset {
