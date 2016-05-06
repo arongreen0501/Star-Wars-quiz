@@ -1102,11 +1102,11 @@ p.results-score {
   margin-top: 20px;
 }
 
-p .stig {
+p.stig {
   position: absolute;
-  bottom: -25px;
-  right: 10px;
-  font-weight: 900;
+  bottom: 0px;
+  right: 0px;
+  font-weight: 900 !important;
   font-size: 150px;
   color: #62DCC3;
   z-index: 3;
@@ -1120,12 +1120,6 @@ p .stig {
   line-height: 0.8;
   font-weight: 900;
   z-index: 9;
-}
-
-.results-card p {
-  font-weight: 500;
-  line-height: 1;
-  margin-top: -20px;
 }
 
 .results-card-back {
