@@ -57,15 +57,25 @@
       function addSubmission() {
         user = vm.newSubmission;
 
-        vm.submissions.$add(vm.newSubmission);
+
+        var userID = fireSubmissions.push(vm.newSubmission);
         vm.newSubmission = new Submission();
         // user = vm.newSubmission;
         console.log(user);
+        console.log(userID.key());
+
+        // var newUser = fireSubmissions.push();
+        // newUser.set({'name': 'user.name', 'weight': 'user.weight'});
+        // console.log('user ID is ' +newUser.key());
+
+        // fireSubmissions.push({
+        //   date: Firebase.ServerValue.TIMESTAMP
+        // })
 
 
-        // fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
-        //   var newPost = snapshot.val();
-        //   console.log(newPost.name, snapshot.key());
+        // fireSubmissions.orderByChild("date").on("child_added", function(snapshot) {
+        //   var userID = snapshot.val();
+        //   console.log(userID.name, snapshot.key());
         // });
       }
 
@@ -73,19 +83,19 @@
        function calculateScore() {
 
 
-        fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
-          var newPost = snapshot.val();
+        // fireSubmissions.orderByChild("value").limitToLast(1).on("child_added", function(snapshot) {
+        //   var newPost = snapshot.val();
 
-          console.log('Name: ' + newPost.name);
-          console.log('Height: ' + newPost.height);
-          console.log('Weight: ' + newPost.weight);
-          console.log('Gender: ' + newPost.gender);
-          console.log('Hair: ' + newPost.hair);
-          console.log('Eyes: ' + newPost.eyes);
-          console.log('Residence: ' + newPost.residence);
-          console.log('Drive: ' + newPost.drive);
-          console.log('ID: ' + snapshot.key());
-        });
+        //   console.log('Name: ' + newPost.name);
+        //   console.log('Height: ' + newPost.height);
+        //   console.log('Weight: ' + newPost.weight);
+        //   console.log('Gender: ' + newPost.gender);
+        //   console.log('Hair: ' + newPost.hair);
+        //   console.log('Eyes: ' + newPost.eyes);
+        //   console.log('Residence: ' + newPost.residence);
+        //   console.log('Drive: ' + newPost.drive);
+        //   console.log('ID: ' + snapshot.key());
+        // });
 
 
         var rank = 0;
