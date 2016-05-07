@@ -8,8 +8,10 @@
     configFunction.$inject = ['$routeProvider'];
 
     function configFunction($routeProvider) {
-        $routeProvider.when('/results', {
-          templateUrl: 'app/results/results.html'
+        $routeProvider.when('/results/:id', {
+          templateUrl: 'app/results/results.html',
+          controller: 'ResultsController',
+          controllerAs: 'vm'
         });
       };
 

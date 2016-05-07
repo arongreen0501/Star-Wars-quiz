@@ -1,9 +1,11 @@
 <div class="results">
+<h1>{{ vm.model.message }}</h1>
 
   <div class="results-card">
-    <h3>Hermann Hafsteinsson<h3>
+    <h3>{{ vm.fleh[0].name }}, <h3>
     <p>Þú fékkst <span>45 stig</span></p>
     <p class="stig">65</p>
+    <button ng-click="vm.test()">takki</button>
   </div>
 
   <div class="results-card results-card-back">

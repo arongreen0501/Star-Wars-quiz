@@ -5,9 +5,9 @@
     .module('app.quiz')
     .controller('quizController', quizController);
 
-    quizController.$inject = ['$firebaseArray'];
+    quizController.$inject = ['$firebaseArray', '$routeParams', '$window'];
 
-    function quizController($firebaseArray) {
+    function quizController($firebaseArray, $routeParams, $window) {
       var vm =  this;
 
       var user = {};
@@ -35,6 +35,10 @@
       vm.aframSkref = aframSkref;
       vm.afturSkref = afturSkref;
       vm.errorMsg = errorMsg;
+      vm.test = function() {
+        console.log("takki");
+        console.log(user);
+      }
 
       function errorMsg() {
 
@@ -62,6 +66,7 @@
         vm.newSubmission = new Submission();
         // user = vm.newSubmission;
         console.log(user, 'user ID: '+userID.key());
+        $window.location.href = '/#/results/'+userID.key();
         // console.log(userID.key());
 
         // var newUser = fireSubmissions.push();
@@ -380,6 +385,9 @@
       }
 
 
+      vm.model = {
+        message: $routeParams.id + 'er þitt id'
+      };
 
 
 
