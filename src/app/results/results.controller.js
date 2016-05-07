@@ -5,19 +5,20 @@
     .module('app.results')
     .controller('ResultsController', ResultsController);
 
-  ResultsController.$inject = ['$firebaseArray', '$routeParams'];
+  ResultsController.$inject = ['$firebaseArray', '$routeParams', '$timeout'];
 
-  function ResultsController($firebaseArray, $routeParams) {
+  function ResultsController($firebaseArray, $routeParams, $timeout) {
     var vm = this;
     var ref = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
-    vm.fleh = $firebaseArray(ref);
+    vm.userRef = $firebaseArray(ref);
     var key = $routeParams.id;
 
 
 
-    vm.test = function() {
 
+    $timeout(function() {
         var record = ref.child(key);
+
         //Get record
         // return record.once('name').then(function(snapshot) {
         //     console.log(snapshot.val());
@@ -27,13 +28,17 @@
 
 
         return record.once('value', function(snapshot) {
-            console.log(snapshot.val())
+            var userData = snapshot.val();
+
+                vm.userData = snapshot.val();
+
+            console.log(userData)
         }), function(error) {
             console.log('Error:' +error);
         };
 
         // console.log(ref.child(user.uid));
-    }
+    });
 
 
 
