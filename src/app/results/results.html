@@ -1,16 +1,26 @@
 <div class="results">
+<h1>{{ vm.model.message }}</h1>
 
   <div class="results-card">
-    <h3>Hermann Hafsteinsson<h3>
+    <h3> {{ vm.userData.name }}, <h3>
     <p>Þú fékkst <span>45 stig</span></p>
     <p class="stig">65</p>
+
   </div>
 
   <div class="results-card results-card-back">
     <h3>Hermann Hafsteinsson<h3>
+    <button ng-click="vm.test()">takki</button>
   </div>
 
 </div>
+
+
+        <!-- <p ng-repeat="(key, value) in vm.userData">
+            {{ key }} : {{ value }}
+        </p> -->
+
+
 
 <!-- Þarf að vita hvað þú fékkst mörg stig -->
 <!-- Og senda þær upplýsingar í function sem birtir karaktera sem eru nálægt þér í stigum -->
