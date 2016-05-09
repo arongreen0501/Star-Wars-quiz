@@ -119,13 +119,13 @@
 
                 if (character.eyes == 'blue') {
                   rank = rank + 0;
-                } else if (character.eyes = 'grayblue') {
+                } else if (character.eyes == 'grayblue') {
                   rank = rank + 1;
-                } else if (character.eyes = 'green') {
+                } else if (character.eyes == 'green') {
                   rank = rank + 3;
-                } else if (character.eyes = 'other') {
+                } else if (character.eyes == 'other') {
                   rank = rank + 6;
-                } else if (character.eyes = 'brown') {
+                } else if (character.eyes == 'brown') {
                   rank = rank + 7;
                 } else {
                   rank = rank + 9;

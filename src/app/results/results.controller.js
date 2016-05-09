@@ -42,7 +42,7 @@
                 } else {
                   rank = rank+ 10;
                 };
-                console.log(rank + ' eftir lengd nafns');
+                // console.log(rank + ' eftir lengd nafns');
 
                 if (userData.height <= 149) {
                   rank = rank + 1;
@@ -59,7 +59,7 @@
                 } else {
                   rank = rank + 15;
                 };
-                console.log(rank + ' eftir hæð');
+                // console.log(rank + ' eftir hæð');
 
                 if (userData.weight <= 40) {
                   rank = rank + 2;
@@ -82,7 +82,7 @@
                 } else {
                   rank = rank + 15;
                 };
-                console.log(rank + ' eftir þyngd');
+                // console.log(rank + ' eftir þyngd');
 
                 if (userData.residence == 'sudur') {
                   rank = rank + 2;
@@ -95,7 +95,7 @@
                 } else {
                   rank = rank + 13;
                 };
-                console.log(rank + 'eftir kjördæmi');
+                // console.log(rank + 'eftir kjördæmi');
 
                 if (userData.gender == 'male') {
                   rank = rank + 0;
@@ -104,14 +104,14 @@
                 } else {
                   rank = rank + 6;
                 };
-                console.log(rank + ' eftir kyn');
+                // console.log(rank + ' eftir kyn');
 
                 if (userData.drive == 'bilprof') {
                   rank = rank + 7;
                 } else {
                   rank = rank + 0;
                 };
-                console.log(rank + ' eftir bílpróf');
+                // console.log(rank + ' eftir bílpróf');
 
                 if (userData.hair == 'other') {
                   rank = rank + 0;
@@ -126,7 +126,7 @@
                 } else {
                   rank = rank + 12;
                 };
-                console.log(rank + ' eftir hár');
+                // console.log(rank + ' eftir hár');
 
                 if (userData.eyes == 'blue') {
                   rank = rank + 0;
@@ -147,7 +147,7 @@
                 vm.rank = rank;
 
                 var matchScore = rank;
-                var charactersArray=[{name:"Luke Skywalker",rank:57},{name:"C-3PO",rank:50},{name:"R2-D2",rank:35},{name:"Darth Vader",rank:84},{name:"Leia Organa",rank:49},{name:"Owen Lars",rank:54},{name:"Beru Whitesun Lars",rank:49},{name:"R5-D4",rank:35},{name:"Biggs Darklighter",rank:66},{name:"Obi-Wan Kenobi",rank:63},{name:"Anakin Skywalker",rank:66},{name:"Wilhuff Tarkin",rank:51},{name:"Chewbacca",rank:79},{name:"Han Solo",rank:62},{name:"Greedo",rank:46},{name:"Jabba Desilijic Tiure",rank:72},{name:"Wedge Antilles",rank:57},{name:"Jek Tono Porkins",rank:70},{name:"Yoda",rank:25},{name:"Sheev Palpatine",rank:47},{name:"Boba Fett",rank:62},{name:"IG-88",rank:81},{name:"Bossk",rank:62},{name:"Lando Calrissian",rank:58},{name:"Lobot",rank:44},{name:"Ackbar",rank:54},{name:"Mon Mothma",rank:42},{name:"Crynyd",rank:52},{name:"Wicket Systri Warrick",rank:31},{name:"Nien Nunb",rank:50},{name:"Qui-Gon Jinn",rank:69},{name:"Nute Gunray",rank:59},{name:"Finis Valorum",rank:47},{name:"Jar Jar Binks",rank:53},{name:"Ross Tarpals",rank:64},{name:"Rugor Nass",rank:73},{name:"Ric Olié",rank:64},{name:"Watto",rank:27},{name:"Sebulba",rank:27},{name:"Quarsh Panaka",rank:55},{name:"Shmi Skywalker",rank:46},{name:"Darth Maul",rank:56},{name:"Bib Fortuna",rank:57},{name:"Ayla Secura",rank:48},{name:"Ratts Tyerel",rank:28},{name:"Dud Bolt",rank:29},{name:"Gasgano",rank:27},{name:"Ben Quadinaros",rank:41},{name:"Mace Windu",rank:54},{name:"Ki-Adi-Mundi",rank:59},{name:"Kit Fisto",rank:58},{name:"Eeth Koth",rank:46},{name:"Adi Gallia",rank:51},{name:"Saesee Tiin",rank:55},{name:"Yarael Poof",rank:66},{name:"Plo Koon",rank:62},{name:"Mas Amedda",rank:62},{name:"Gregar Typho",rank:65},{name:"Cordé",rank:38},{name:"Cliegg Lars",rank:55},{name:"Poggle the Lesser",rank:54},{name:"Luminara Unduli",rank:48},{name:"Barriss Offee",rank:42},{name:"Dormé",rank:39},{name:"Dooku",rank:64},{name:"Bail Prestor Organa",rank:60},{name:"Jango Fett",rank:52},{name:"Zam Wesell",rank:53},{name:"Dexter Jettster",rank:63},{name:"Lama Su",rank:63},{name:"Taun We",rank:64},{name:"Jocasta Nu",rank:45},{name:"R4-P17",rank:32},{name:"Wat Tambor",rank:50},{name:"Sam Hill",rank:54},{name:"Shaak Ti",rank:47},{name:"Grievous",rank:83},{name:"Tarfful",rank:73},{name:"Raymus Antilles",rank:53},{name:"Sly Moore",rank:45},{name:"Tion Medon",rank:61},{name:"Finn",rank:56},{name:"Rey",rank:57},{name:"Poe Dameron",rank:57},{name:"BB-8",rank:35},{name:"Captain Phasma",rank:62},{name:"Padmé Amidala",rank:52}];
+                var charactersArray=[{name:"Luke Skywalker",rank:42},{name:"C-3PO",rank:28},{name:"R2-D2",rank:24},{name:"Darth Vader",rank:52},{name:"Leia Organa",rank:50},{name:"Owen Lars",rank:42},{name:"Beru Whitesun Lars",rank:43},{name:"R5-D4",rank:24},{name:"Biggs Darklighter",rank:60},{name:"Obi-Wan Kenobi",rank:57},{name:"Anakin Skywalker",rank:46},{name:"Wilhuff Tarkin",rank:39},{name:"Chewbacca",rank:56},{name:"Han Solo",rank:54},{name:"Greedo",rank:33},{name:"Jabba Desilijic Tiure",rank:49},{name:"Wedge Antilles",rank:55},{name:"Jek Tono Porkins",rank:49},{name:"Yoda",rank:23},{name:"Sheev Palpatine",rank:33},{name:"Boba Fett",rank:57},{name:"IG-88",rank:51},{name:"Bossk",rank:39},{name:"Lando Calrissian",rank:54},{name:"Lobot",rank:24},{name:"Ackbar",rank:38},{name:"Mon Mothma",rank:37},{name:"Crynyd",rank:49},{name:"Wicket Systri Warrick",rank:33},{name:"Nien Nunb",rank:35},{name:"Qui-Gon Jinn",rank:51},{name:"Nute Gunray",rank:44},{name:"Finis Valorum",rank:35},{name:"Jar Jar Binks",rank:41},{name:"Roos Tarpals",rank:47},{name:"Rugor Nass",rank:52},{name:"Ric Olié",rank:48},{name:"Watto",rank:31},{name:"Sebulba",rank:27},{name:"Quarsh Panaka",rank:52},{name:"Shmi Skywalker",rank:50},{name:"Darth Maul",rank:39},{name:"Bib Fortuna",rank:43},{name:"Ayla Secura",rank:42},{name:"Ratts Tyerel",rank:28},{name:"Dud Bolt",rank:24},{name:"Gasgano",rank:28},{name:"Ben Quadinaros",rank:36},{name:"Mace Windu",rank:41},{name:"Ki-Adi-Mundi",rank:40},{name:"Kit Fisto",rank:35},{name:"Eeth Koth",rank:42},{name:"Adi Gallia",rank:33},{name:"Saesee Tiin",rank:36},{name:"Yarael Poof",rank:34},{name:"Plo Koon",rank:50},{name:"Mas Amedda",rank:33},{name:"Gregar Typho",rank:59},{name:"Cordé",rank:41},{name:"Cliegg Lars",rank:42},{name:"Poggle the Lesser",rank:31},{name:"Luminara Unduli",rank:45},{name:"Barriss Offee",rank:41},{name:"Dormé",rank:42},{name:"Dooku",rank:44},{name:"Bail Prestor Organa",rank:55},{name:"Jango Fett",rank:47},{name:"Zam Wesell",rank:36},{name:"Dexter Jettster",rank:32},{name:"Lama Su",rank:44},{name:"Taun We",rank:47},{name:"Jocasta Nu",rank:32},{name:"R4-P17",rank:31},{name:"Wat Tambor",rank:40},{name:"San Hill",rank:37},{name:"Shaak Ti",rank:44},{name:"Grievous",rank:64},{name:"Tarfful",rank:52},{name:"Raymus Antilles",rank:48},{name:"Sly Moore",rank:25},{name:"Tion Medon",rank:48},{name:"Finn",rank:56},{name:"Rey",rank:56},{name:"Poe Dameron",rank:53},{name:"BB-8",rank:24},{name:"Captain Phasma",rank:46},{name:"Padmé Amidala",rank:52}];
 
                 function closestTo(a,b) {
                   if (Math.abs(a.rank - matchScore) > Math.abs(b.rank - matchScore)) return 1;

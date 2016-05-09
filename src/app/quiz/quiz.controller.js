@@ -68,7 +68,7 @@
         vm.newSubmission = new Submission();
         // user = vm.newSubmission;
         console.log(user, 'user ID: '+userID.key());
-        $window.location.href = '/#/results/'+userID.key();
+        $window.location.href = '/src/#/results/'+userID.key();
         // console.log(userID.key());
 
         // var newUser = fireSubmissions.push();
