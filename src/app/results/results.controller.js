@@ -152,10 +152,13 @@
                 function closestTo(a,b) {
                   if (Math.abs(a.rank - matchScore) > Math.abs(b.rank - matchScore)) return 1;
                   if (Math.abs(a.rank - matchScore) < Math.abs(b.rank - matchScore)) return -1;
-                  return 0
+                  return 0;
                 }
 
+
                 var closest5 = charactersArray.sort(closestTo).slice(0,5);
+
+                vm.closest5 = closest5;
                 console.log(closest5);
 
 

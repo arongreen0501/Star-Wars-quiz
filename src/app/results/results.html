@@ -4,6 +4,7 @@
   <div class="results-card">
     <h3> {{ vm.userData.name }}, <h3>
     <p>Þú fékkst <span>{{ vm.rank }} stig</span></p>
+
 <!--     <p class="stig">65</p> -->
 
 
@@ -17,6 +18,8 @@
   </div>
 
 </div>
+
+<h2 ng-repeat="val in vm.closest5 | filter:{name: name}:true">{{ val.name }}</h2>
 
 <!-- <button ng-click="vm.calculateCharacterScore(userData)" class="btn btn-danger" type="">Calculate score</button> -->
 
