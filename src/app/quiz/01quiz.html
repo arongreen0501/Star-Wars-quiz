@@ -5,17 +5,18 @@
     <fieldset class="personal_info" ng-show="vm.skref == 1">
       <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.name" name="fullName" type="text" class="form-control" placeholder="Full name" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" />
+        <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" />
+        <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" ng-required="vm.skref == 1" />
       </div>
-      <span ng-show="personal_info.vm.newSubmission.$dirty && vm.newSubmission.name.$error.required">required</span>
 
-      <button type="button" class="nextButton icon-arrow-right" value="next" ng-disabled="myAwesomeForm.$invalid" ng-click="vm.aframSkref()">Áfram</button>
+      <span ng-show="myAwesomeForm.fullName.$dirty && myAwesomeForm.fullName.$error.required ">Fylla út</span>
+
+      <button type="submit" class="nextButton icon-arrow-right" value="next" ng-disabled="myAwesomeForm.fullName.$invalid" ng-click="vm.aframSkref()">Áfram</button>
 
     </fieldset>
 
@@ -82,7 +83,7 @@
             <label for="blue-eyes">Blue</label>
           </li>
           <li>
-            <input ng-model="vm.newSubmission.eyes" type="radio" id="grayblue-eyes" value="grayblue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
+            <input ng-model="vm.newSubmission.eyes" type="radio" id="grayblue-eyes" value="grayblue" name="grayblue" class="form-control" ng-click="vm.aframSkref()"/>
             <label for="grayblue-eyes">Gray-blue</label>
           </li>
           <li>
