@@ -5,7 +5,7 @@
     <fieldset class="personal_info" ng-show="vm.skref == 1">
       <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" required/>
+        <input ng-model="vm.newSubmission.name" type="text" class="form-control" placeholder="Full name" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
         <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" />
@@ -13,8 +13,9 @@
       <div class="form-group">
         <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" />
       </div>
+      <span ng-show="personal_info.vm.newSubmission.$dirty && vm.newSubmission.name.$error.required">required</span>
 
-      <button type="button" class="nextButton icon-arrow-right" ng-click="vm.aframSkref()">Áfram</button>
+      <button type="button" class="nextButton icon-arrow-right" value="next" ng-disabled="myAwesomeForm.$invalid" ng-click="vm.aframSkref()">Áfram</button>
 
     </fieldset>
 
