@@ -1,0 +1,18 @@
+#about p {
+  font-size: 21px;
+}
+#about h2 {
+  margin-bottom: -15px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#about a {
+  font-weight: 900;
+  color: $secondaryGreen;
+}
+
+#about a:hover {
+  font-weight: 900;
+  color: $primaryGreen;
+}
