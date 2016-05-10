@@ -13,8 +13,14 @@
   </div>
 
   <div ng-repeat="val in vm.closest5 | filter: {name: name}:true" class="results-card results-card-back">
-    <h3>{{ val.name }} - {{ val.rank }}<h3>
-    <progress value="{{ val.rank }}" max="{{ vm.rank }}"></progress>
+    <div class="characterImg">
+    <img ng-src="content/img/characterIMG/{{val.name}}.jpg">
+    </div>
+    <div class="results_info">
+    <h3>{{ val.name }}<h3>
+    <h3>{{ val.rank }} Stig</h3>
+    </div>
+    <!-- <progress value="{{ val.rank }}" max="{{ vm.rank }}"></progress> -->
   </div>
 
 </div>

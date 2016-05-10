@@ -74,7 +74,7 @@
           "drive": "bilprof"
         },
         {
-          "name": "Leia Organa",
+          "name": "Princess Leia",
           "height": "150",
           "weight": "49",
           "hair": "brown",
@@ -184,7 +184,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Jabba Desilijic Tiure",
+          "name": "Jabba the Hutt",
           "height": "175",
           "weight": "1,358",
           "hair": "other",
@@ -680,7 +680,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Dooku",
+          "name": "Count Dooku",
           "height": "193",
           "weight": "80",
           "hair": "gray",
