@@ -1241,3 +1241,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+
+.logo {
+  text-align: center;
+}
