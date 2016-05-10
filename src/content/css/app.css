@@ -407,12 +407,25 @@ textarea {
 
 .personal_info input {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   height: 40px;
 }
 
+.skrefafjoldi p {
+  width: 34%;
+  float: left;
+  font-weight: 700;
+  margin-top: -5px;
+  font-size: 15px;
+}
+
+.skrefafjoldi progress {
+  width: 64%;
+  float: right;
+  margin-top: -3px;
+}
+
 progress {
-  width: 100%;
   -webkit-appearance: none;
   border: none;
 }
@@ -439,23 +452,13 @@ input {
   border-radius: 40px;
   color: #fff;
   height: 40px;
-}
-
-::-webkit-input-placeholder {
-  padding-left: 10px;
-}
-
-:-moz-placeholder {
-  padding-left: 10px;
-}
-
-:-ms-input-placeholder {
-  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .radio-style {
   list-style-type: none;
-  margin: 25px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -466,7 +469,7 @@ input {
   height: 40px;
   position: relative;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .radio-style label, .radio-style input {
@@ -476,6 +479,13 @@ input {
   left: 0;
   right: 0;
   bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input[type=text], input[type=number] {
+  padding-left: 15px;
+  font-weight: 700;
 }
 
 .radio-style input[type="radio"] {
@@ -1229,11 +1239,26 @@ p.stig {
   background-color: #62DCC3;
 }
 
+fieldset h3 {
+  font-size: 24px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
 body {
   background-image: url("../img/backr1.jpg");
   background-color: black;
   font-family: 'Work Sans', sans-serif;
   color: white;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .container {
@@ -1244,4 +1269,34 @@ body {
 
 .logo {
   text-align: center;
+  margin-top: -70px;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
 }

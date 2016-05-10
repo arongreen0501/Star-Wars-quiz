@@ -1,35 +1,15 @@
 <div class="results">
-<h1>{{ vm.model.message }}</h1>
+<!-- <h1>{{ vm.model.message }}</h1> -->
 
   <div class="results-card">
-    <h3> {{ vm.userData.name }}, <h3>
+    <h3> {{ vm.userData.name }} <h3>
     <p>Þú fékkst <span>{{ vm.rank }} stig</span></p>
-
-<!--     <p class="stig">65</p> -->
-
-
-
 
   </div>
 
   <div ng-repeat="val in vm.closest5 | filter: {name: name}:true" class="results-card results-card-back">
-    <h3>{{ val.name }} - {{ val.rank }}<h3>
+    <h3>{{ val.name }} – {{ val.rank }}<h3>
     <progress value="{{ val.rank }}" max="{{ vm.rank }}"></progress>
   </div>
 
 </div>
-
-<!-- <h2 ng-repeat="val in vm.closest5 | filter:{name: name}:true">{{ val.name }} - {{ val.rank }}</h2> -->
-
-
-<!-- <button ng-click="vm.calculateCharacterScore(userData)" class="btn btn-danger" type="">Calculate score</button> -->
-
-
-        <!-- <p ng-repeat="(key, value) in vm.userData">
-            {{ key }} : {{ value }}
-        </p> -->
-
-
-
-<!-- Þarf að vita hvað þú fékkst mörg stig -->
-<!-- Og senda þær upplýsingar í function sem birtir karaktera sem eru nálægt þér í stigum -->
