@@ -18,119 +18,117 @@
         function calculateCharacterScore(character) {
           var rank = 0;
 
-                if (character.name.length <= 5) {
-                  rank = rank + 3;
-                } else if (character.name.length >=6 && character.name.length <=10) {
-                  rank = rank + 5;
-                } else if (character.name.length >=11 && character.name.length <=15) {
-                  rank = rank + 6;
-                } else if (character.name.length >=16 && character.name.length <=20) {
-                  rank = rank + 7;
-                } else if (character.name.length >=21 && character.name.length <=25) {
-                  rank = rank + 9;
+                if (character.name.length <= 3) {
+                  rank = rank + 10;
+                } else if (character.name.length >=4 && character.name.length <=7) {
+                  rank = rank + 14;
+                } else if (character.name.length >=8 && character.name.length <=11) {
+                  rank = rank + 18;
+                } else if (character.name.length >=12 && character.name.length <=14) {
+                  rank = rank + 22;
+                } else if (character.name.length >=15 && character.name.length <=17) {
+                  rank = rank + 28;
+                } else if (character.name.length >=18 && character.name.length <=20) {
+                  rank = rank + 32;
+                } else if (character.name.length >=21 && character.name.length <=24) {
+                  rank = rank + 36;
+                } else if (character.name.length >=25 && character.name.length <=28) {
+                  rank = rank + 41;
                 } else {
-                  rank = rank+ 10;
+                  rank = rank+ 50;
                 };
-                console.log(rank + ' eftir lengd nafns');
 
                 if (character.height <= 149) {
-                  rank = rank + 1;
+                  rank = rank + 11;
                 } else if (character.height >=150 && character.height <=159) {
-                  rank = rank + 3;
-                } else if (character.height >=160 && character.height <=169) {
-                  rank = rank + 5;
-                } else if (character.height >=170 && character.height<=179) {
-                  rank = rank + 8;
-                } else if (character.height >=180 && character.height <=189) {
-                  rank = rank + 10;
-                } else if (character.height >=190 && character.height <=199) {
-                  rank = rank + 12;
-                } else {
                   rank = rank + 15;
+                } else if (character.height >=160 && character.height <=169) {
+                  rank = rank + 19;
+                } else if (character.height >=170 && character.height<=179) {
+                  rank = rank + 26;
+                } else if (character.height >=180 && character.height <=189) {
+                  rank = rank + 37;
+                } else if (character.height >=190 && character.height <=199) {
+                  rank = rank + 40;
+                } else {
+                  rank = rank + 44;
                 };
-                console.log(rank + ' eftir hæð');
 
                 if (character.weight <= 40) {
-                  rank = rank + 2;
+                  rank = rank + 7;
                 } else if (character.weight >=41 && character.weight <=50) {
-                  rank = rank + 4;
-                } else if (character.weight >=51 && character.weight <=60) {
-                  rank = rank + 5;
-                } else if (character.weight >=61 && character.weight <=70) {
-                  rank = rank + 6;
-                } else if (character.weight >=71 && character.weight <=80) {
-                  rank = rank + 8;
-                } else if (character.weight >=81 && character.weight <=90) {
-                  rank = rank + 9;
-                } else if (character.weight >=91 && character.weight <=100) {
-                  rank = rank + 10;
-                } else if (character.weight >=101 && character.weight <=110) {
-                  rank = rank + 11;
-                } else if (character.weight >=111 && character.weight <=120) {
                   rank = rank + 12;
-                } else {
+                } else if (character.weight >=51 && character.weight <=60) {
                   rank = rank + 15;
+                } else if (character.weight >=61 && character.weight <=70) {
+                  rank = rank + 19;
+                } else if (character.weight >=71 && character.weight <=80) {
+                  rank = rank + 24;
+                } else if (character.weight >=81 && character.weight <=90) {
+                  rank = rank + 29;
+                } else if (character.weight >=91 && character.weight <=100) {
+                  rank = rank + 34;
+                } else if (character.weight >=101 && character.weight <=110) {
+                  rank = rank + 39;
+                } else if (character.weight >=111 && character.weight <=120) {
+                  rank = rank + 42;
+                } else {
+                  rank = rank + 46;
                 };
-                console.log(rank + ' eftir þyngd');
 
                 if (character.residence == 'sudur') {
-                  rank = rank + 2;
+                  rank = rank + 6;
                 } else if (character.residence == 'sudvestur') {
-                  rank = rank + 5;
+                  rank = rank + 12;
                 } else if (character.residence == 'reykjavik') {
-                  rank = rank + 8;
+                  rank = rank + 18;
                 } else if (character.residence == 'nordvestur') {
-                  rank = rank + 10;
+                  rank = rank + 24;
                 } else {
-                  rank = rank + 13;
+                  rank = rank + 30;
                 };
-                console.log(rank + 'eftir kjördæmi');
 
-                if (character.gender == 'male') {
+                if (character.gender == 'female') {
                   rank = rank + 0;
                 } else if (character.gender == 'other') {
-                  rank = rank + 3;
+                  rank = rank + 8;
                 } else {
-                  rank = rank + 6;
+                  rank = rank + 16;
                 };
-                console.log(rank + ' eftir kyn');
 
                 if (character.drive == 'bilprof') {
-                  rank = rank + 7;
+                  rank = rank + 17;
                 } else {
                   rank = rank + 0;
                 };
-                console.log(rank + ' eftir bílpróf');
 
-                if (character.hair == 'other') {
-                  rank = rank + 0;
-                } else if (character.hair == 'gray') {
-                  rank = rank + 2;
-                } else if (character.hair == 'blonde') {
-                  rank = rank + 5;
-                } else if (character.hair == 'other') {
+                if (character.hair == 'gray') {
                   rank = rank + 7;
-                } else if (character.hair == 'brown') {
+                } else if (character.hair == 'blonde') {
                   rank = rank + 9;
-                } else {
+                } else if (character.hair == 'other') {
                   rank = rank + 12;
+                } else if (character.hair == 'red') {
+                  rank = rank + 16;
+                } else if (character.hair == 'brown') {
+                  rank = rank + 20;
+                } else {
+                  rank = rank + 23;
                 };
-                console.log(rank + ' eftir hár');
 
                 if (character.eyes == 'blue') {
-                  rank = rank + 0;
-                } else if (character.eyes == 'grayblue') {
-                  rank = rank + 1;
-                } else if (character.eyes == 'green') {
-                  rank = rank + 3;
-                } else if (character.eyes == 'other') {
-                  rank = rank + 6;
-                } else if (character.eyes == 'brown') {
                   rank = rank + 7;
-                } else {
+                } else if (character.eyes == 'grayblue') {
                   rank = rank + 9;
+                } else if (character.eyes == 'green') {
+                  rank = rank + 15;
+                } else if (character.eyes == 'other') {
+                  rank = rank + 22;
+                } else if (character.eyes == 'brown') {
+                  rank = rank + 30;
+                } else {
+                  rank = rank + 37;
                 };
-                console.log(rank + ' eftir eyes');
 
                 console.log(character.name + ' ' + rank + ' points');
         // vm.characterions.$remove(character);
@@ -139,6 +137,6 @@
 
 
 
-        }
+        };
 
 })();

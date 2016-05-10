@@ -11,6 +11,9 @@
         $routeProvider.when('/', {
           templateUrl: 'app/intro/intro.html'
         });
+        $routeProvider.when('/about', {
+          templateUrl: 'app/intro/about.html'
+        });
       };
 
 })();

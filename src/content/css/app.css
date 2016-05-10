@@ -516,7 +516,7 @@ input[type=text], input[type=number] {
   float: right;
   margin-top: 20px;
   border-radius: 20px;
-  width: 180px;
+  width: 100px;
   border: 1px;
   border-color: #0BAA8E;
   background-color: #0BAA8E;
@@ -544,6 +544,9 @@ input[type=text], input[type=number] {
 
 .nextButton:hover {
   background: #62DCC3;
+  width: 130px;
+  text-align: left;
+  padding-left: 15px;
 }
 
 .nextButton:before {
@@ -1262,6 +1265,26 @@ fieldset h3 {
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 5px;
   margin-bottom: 0px;
+}
+
+#about p {
+  font-size: 21px;
+}
+
+#about h2 {
+  margin-bottom: -15px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#about a {
+  font-weight: 900;
+  color: #62DCC3;
+}
+
+#about a:hover {
+  font-weight: 900;
+  color: #0BAA8E;
 }
 
 body {
