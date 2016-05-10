@@ -1,6 +1,9 @@
 <form class="form-inline party-form" name="myAwesomeForm">
-  <p>Spurning {{ vm.skref }} af 6</p>
-  <progress value="{{vm.skref*6}}" max="36"></progress>
+  <div class="skrefafjoldi">
+    <p class="skref">Spurning {{ vm.skref }} af 6</p>
+    <progress value="{{vm.skref*6}}" max="36"></progress>
+  </div>
+  <div class="cf"></div>
   <div class="formContainer">
     <fieldset class="personal_info" ng-show="vm.skref == 1">
       <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
@@ -151,18 +154,18 @@
         </ul>
       </div>
       <button type="button" class="backButton icon-arrow-left" ng-click="vm.afturSkref()">Til baka</button>
-      <button type="button" ng-click="vm.aframSkref()">Áfram</button>
+      <!-- <button type="button" ng-click="vm.aframSkref()">Áfram</button> -->
     </fieldset>
 
 
 
-    <button type="submit" class="btn btn-primary" ng-click="vm.addSubmission()">Submit</button>
+   <!--  <button type="submit" class="btn btn-primary" ng-click="vm.addSubmission()">Submit</button> -->
   </div>
 </form>
 
 
-<ul ng-repeat="submiss in vm.submissions">
+<!-- <ul ng-repeat="submiss in vm.submissions">
   <li>{{ submiss.name }} – {{submiss.weight}} – {{submiss.height}} - {{submiss.gender}} - {{submiss.hair}} - {{submiss.eyes}} - {{submiss.residence}} - {{submiss.drive}}
   <button ng-click="vm.calculateScore(submiss)" class="btn btn-danger" type="">Calculate score</button>
   <button ng-click="vm.removeSubmission(submiss)" class="btn btn-danger" type="">Remove</button></li>
-</ul>
+</ul> -->

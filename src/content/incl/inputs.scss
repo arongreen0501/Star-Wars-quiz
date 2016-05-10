@@ -1,12 +1,26 @@
 .personal_info input{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 40px;
 }
 
 
+.skrefafjoldi {
+    p {
+        width: 34%;
+        float: left;
+        font-weight: 700;
+        margin-top: -5px;
+        font-size: 15px;
+    }
+    progress {
+        width: 64%;
+        float: right;
+        margin-top: -3px;
+    }
+}
+
 progress {
-    width: 100%;
     -webkit-appearance: none;
     border: none;
 }
@@ -36,22 +50,24 @@ input {
     border-radius: 40px;
     color: #fff;
     height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-::-webkit-input-placeholder {
-    padding-left: 10px;
-}
+// ::-webkit-input-placeholder {
+//     padding-left: 10px;
+// }
 
-:-moz-placeholder {
-    padding-left: 10px;
-}
-:-ms-input-placeholder {
-    padding-left: 10px;
-}
+// :-moz-placeholder {
+//     padding-left: 10px;
+// }
+// :-ms-input-placeholder {
+//     padding-left: 10px;
+// }
 
 .radio-style {
     list-style-type:none;
-    margin:25px 0 0 0;
+    margin: 0 0 0 0;
     padding:0;
 }
 
@@ -62,7 +78,7 @@ input {
     height: 40px;
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .radio-style label, .radio-style input {
@@ -72,6 +88,13 @@ input {
     left:0;
     right:0;
     bottom:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type=text], input[type=number] {
+    padding-left: 15px;
+    font-weight: 700;
 }
 
 .radio-style input[type="radio"] {
