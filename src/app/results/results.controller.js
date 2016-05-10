@@ -15,7 +15,14 @@
     var key = $routeParams.id;
 
 
+
+
     $timeout(function() {
+         // makes sure the whole site is loaded
+            $('#status').delay(5000).fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(5000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+
         var record = ref.child(key);
 
 

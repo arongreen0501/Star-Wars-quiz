@@ -8,6 +8,7 @@
     quizController.$inject = ['$firebaseArray', '$routeParams', '$window'];
 
     function quizController($firebaseArray, $routeParams, $window) {
+
       var vm =  this;
 
       var user = {};
@@ -69,6 +70,8 @@
         // user = vm.newSubmission;
         console.log(user, 'user ID: '+userID.key());
         $window.location.href = '/src/#/results/'+userID.key();
+
+
         // console.log(userID.key());
 
         // var newUser = fireSubmissions.push();
