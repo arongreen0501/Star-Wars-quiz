@@ -11,10 +11,10 @@
         <input ng-model="vm.newSubmission.name" name="fullName" type="text" class="form-control" placeholder="Full name" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.weight" type="number" class="form-control" placeholder="Weight (kg)" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.weight" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Weight (kg)" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.height" type="number" class="form-control" placeholder="Height (cm)" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.height" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Height (cm)" ng-required="vm.skref == 1" />
       </div>
 
       <span ng-show="myAwesomeForm.fullName.$dirty && myAwesomeForm.fullName.$error.required ">Fylla út</span>
