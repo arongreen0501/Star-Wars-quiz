@@ -94,16 +94,16 @@
                 } else if (userData.weight >=111 && userData.weight <=120) {
                   rank = rank + 42;
                 } else {
-                  rank = rank + 46;
+                  rank = rank + 50;
                 };
 
                 if (userData.residence == 'sudur') {
                   rank = rank + 6;
-                } else if (userData.residence == 'sudvestur') {
-                  rank = rank + 12;
-                } else if (userData.residence == 'reykjavik') {
-                  rank = rank + 18;
                 } else if (userData.residence == 'nordvestur') {
+                  rank = rank + 12;
+                } else if (userData.residence == 'sudvestur') {
+                  rank = rank + 18;
+                } else if (userData.residence == 'reykjavik') {
                   rank = rank + 24;
                 } else {
                   rank = rank + 30;
@@ -123,27 +123,27 @@
                   rank = rank + 0;
                 };
 
-                if (userData.hair == 'gray') {
+                if (userData.hair == 'red') {
                   rank = rank + 7;
-                } else if (userData.hair == 'blonde') {
-                  rank = rank + 9;
-                } else if (userData.hair == 'other') {
-                  rank = rank + 12;
-                } else if (userData.hair == 'red') {
-                  rank = rank + 16;
                 } else if (userData.hair == 'brown') {
-                  rank = rank + 20;
+                  rank = rank + 9;
+                } else if (userData.hair == 'blonde') {
+                  rank = rank + 14;
+                } else if (userData.hair == 'other') {
+                  rank = rank + 18;
+                } else if (userData.hair == 'gray') {
+                  rank = rank + 21;
                 } else {
-                  rank = rank + 23;
+                  rank = rank + 26;
                 };
 
                 if (userData.eyes == 'blue') {
                   rank = rank + 7;
-                } else if (userData.eyes == 'grayblue') {
-                  rank = rank + 9;
                 } else if (userData.eyes == 'green') {
-                  rank = rank + 15;
+                  rank = rank + 9;
                 } else if (userData.eyes == 'other') {
+                  rank = rank + 15;
+                } else if (userData.eyes == 'grayblue') {
                   rank = rank + 22;
                 } else if (userData.eyes == 'brown') {
                   rank = rank + 30;
