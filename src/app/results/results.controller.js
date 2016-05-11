@@ -28,14 +28,6 @@
             $('body').delay(350).css({'overflow':'visible'});
 
 
-            // jQuery(function(){
-            //   jQuery("#status").fadeIn(500, function(){
-            //     jQuery("#status").delay(500).fadeOut(1000, function(){
-            //       jQuery("#preloader").fadeOut(2000);
-            //     });
-            //   });
-            // });
-
         var record = ref.child(key);
 
 
@@ -44,8 +36,6 @@
 
                 vm.userData = snapshot.val();
                 vm.totalScore = vm.userData.rank;
-
-                // vm.rank = vm.userData;
 
                 var rank = 0;
 
@@ -68,7 +58,6 @@
                 } else {
                   rank = rank+ 50;
                 };
-                // console.log(rank + ' eftir lengd nafns');
 
                 if (userData.height <= 149) {
                   rank = rank + 11;
@@ -85,7 +74,6 @@
                 } else {
                   rank = rank + 44;
                 };
-                // console.log(rank + ' eftir hæð');
 
                 if (userData.weight <= 40) {
                   rank = rank + 7;
@@ -108,7 +96,6 @@
                 } else {
                   rank = rank + 46;
                 };
-                // console.log(rank + ' eftir þyngd');
 
                 if (userData.residence == 'sudur') {
                   rank = rank + 6;
@@ -121,7 +108,6 @@
                 } else {
                   rank = rank + 30;
                 };
-                // console.log(rank + 'eftir kjördæmi');
 
                 if (userData.gender == 'female') {
                   rank = rank + 0;
@@ -130,14 +116,12 @@
                 } else {
                   rank = rank + 16;
                 };
-                // console.log(rank + ' eftir kyn');
 
                 if (userData.drive == 'bilprof') {
                   rank = rank + 17;
                 } else {
                   rank = rank + 0;
                 };
-                // console.log(rank + ' eftir bílpróf');
 
                 if (userData.hair == 'gray') {
                   rank = rank + 7;
@@ -152,7 +136,6 @@
                 } else {
                   rank = rank + 23;
                 };
-                // console.log(rank + ' eftir hár');
 
                 if (userData.eyes == 'blue') {
                   rank = rank + 7;
@@ -168,7 +151,7 @@
                   rank = rank + 37;
                 };
 
-                console.log(userData.name + ' ' + rank + ' points');
+                // console.log(userData.name + ' ' + rank + ' points');
 
                 vm.rank = rank;
 

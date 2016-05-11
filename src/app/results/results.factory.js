@@ -1,18 +1,3 @@
-// (function() {
-//   angular
-//     .module('app.quiz')
-//     .factory('quizFactory', []);
-
-//     factory = {};
-
-//     factory.quizData = {};
-
-//     return factory;
-
-
-// })();
-
-
 (function() {
 
     angular
@@ -157,10 +142,6 @@
 
         console.log(user.name + ' Samtals ' + rank + ' points');
         }
-
-
-
-
 
 
 })();

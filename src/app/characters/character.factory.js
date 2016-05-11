@@ -1,18 +1,3 @@
-// (function() {
-//   angular
-//     .module('app.quiz')
-//     .factory('quizFactory', []);
-
-//     factory = {};
-
-//     factory.quizData = {};
-
-//     return factory;
-
-
-// })();
-
-
 (function() {
 
     angular
@@ -25,8 +10,6 @@
             };
 
             return dataObj;
-
-
         }
 
 

@@ -28,16 +28,6 @@
           controller: 'quizController',
           controllerAs: 'vm'
       })
-      // $routeProvider.when('/results/:userID', {
-      //     templateUrl: 'app/results/results.html',
-      //     controller: 'quizController',
-      //     controllerAs: 'vm'
-      // })
-      // $routeProvider.when('/haircolor', {
-      //   templateUrl: 'app/quiz/03hair.html',
-      //   controller: 'quizController',
-      //   controllerAs: 'vm'
-      // })
 
     }
 

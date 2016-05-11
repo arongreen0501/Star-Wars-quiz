@@ -18,9 +18,6 @@
 
 
 
-
-
-
         function calculateCharacterScore(character) {
           var rank = 0;
 
@@ -137,7 +134,6 @@
                 };
 
                 console.log(character.name + ' ' + rank + ' points');
-        // vm.characterions.$remove(character);
       };
 
 
