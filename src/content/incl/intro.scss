@@ -1,0 +1,21 @@
+.intro_container {
+    text-align: center;
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+.intro_button {
+    background: #FE2A4A;
+    float: none;
+    text-align: center;
+
+    &:hover {
+        background: #FF506B;
+    }
+    &:before {
+        content: '';
+    }
+}
+

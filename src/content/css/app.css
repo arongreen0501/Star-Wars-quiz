@@ -1334,6 +1334,28 @@ fieldset h3 {
   font-size: 22px;
 }
 
+.intro_container {
+  text-align: center;
+}
+
+.intro_container h2 {
+  font-size: 40px;
+}
+
+.intro_button {
+  background: #FE2A4A;
+  float: none;
+  text-align: center;
+}
+
+.intro_button:hover {
+  background: #FF506B;
+}
+
+.intro_button:before {
+  content: '';
+}
+
 body {
   background-image: url("../img/backr1.jpg");
   background-color: black;
