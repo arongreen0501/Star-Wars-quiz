@@ -16,20 +16,21 @@
 
 
 
-
+    //Time out til að geta prentað út nafn á nýjum user
     $timeout(function() {
 
-         // makes sure the whole site is loaded
+         // Preloader
             $(".results").delay(500).fadeIn(100);
             $('#preloader').hide().fadeIn(700);
             $('#status').fadeIn();
-            $('#status').delay(7000).fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(7000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('#status').delay(7000).fadeOut();
+            $('#preloader').delay(7000).fadeOut('slow');
             $('body').delay(350).css({'overflow':'visible'});
 
 
         var record = ref.child(key);
 
+        //Sækir user í Firebase by ID
 
         return record.once('value', function(snapshot) {
             var userData = snapshot.val();
@@ -38,6 +39,8 @@
                 vm.totalScore = vm.userData.rank;
 
                 var rank = 0;
+
+                //Reiknar Userinn
 
                 if (userData.name.length <= 3) {
                   rank = rank + 10;
@@ -154,7 +157,12 @@
                 vm.rank = rank;
 
                 var matchScore = rank;
+
+                //Reiknar characters á móti
+
                var charactersArray=[{name:"Luke Skywalker",rank:150},{name:"C-3PO",rank:129},{name:"R2-D2",rank:112},{name:"Darth Vader",rank:209},{name:"Princess Leia",rank:129},{name:"Owen Lars",rank:142},{name:"Beru Whitesun Lars",rank:115},{name:"R5-D4",rank:112},{name:"Biggs Darklighter",rank:207},{name:"Obi-Wan Kenobi",rank:177},{name:"Anakin Skywalker",rank:172},{name:"Wilhuff Tarkin",rank:140},{name:"Chewbacca",rank:177},{name:"Han Solo",rank:175},{name:"Greedo",rank:146},{name:"Jabba the Hutt",rank:179},{name:"Wedge Antilles",rank:175},{name:"Jek Tono Porkins",rank:171},{name:"Yoda",rank:123},{name:"Sheev Palpatine",rank:161},{name:"Boba Fett",rank:192},{name:"IG-88",rank:188},{name:"Bossk",rank:178},{name:"Lando Calrissian",rank:185},{name:"Ackbar",rank:169},{name:"Mon Mothma",rank:84},{name:"Arvel Crynyd",rank:161},{name:"Wicket Wystri Warrick",rank:127},{name:"Nien Nunb",rank:155},{name:"Qui-Gon Jinn",rank:164},{name:"Nute Gunray",rank:163},{name:"Finis Valorum",rank:133},{name:"Jar Jar Binks",rank:176},{name:"Roos Tarpals",rank:190},{name:"Rugor Nass",rank:207},{name:"Ric Olié",rank:157},{name:"Watto",rank:113},{name:"Sebulba",rank:115},{name:"Quarsh Panaka",rank:184},{name:"Shmi Skywalker",rank:140},{name:"Darth Maul",rank:153},{name:"Bib Fortuna",rank:184},{name:"Ayla Secura",rank:138},{name:"Ratts Tyerel",rank:119},{name:"Gasgano",rank:126},{name:"Mace Windu",rank:160},{name:"Ki-Adi-Mundi",rank:162},{name:"Eeth Koth",rank:146},{name:"Adi Gallia",rank:116},{name:"Saesee Tiin",rank:161},{name:"Yarael Poof",rank:158},{name:"Mas Amedda",rank:156},{name:"Gregar Typho",rank:201},{name:"Cordé",rank:107},{name:"Cliegg Lars",rank:140},{name:"Poggle the Lesser",rank:163},{name:"Barriss Offee",rank:110},{name:"Dormé",rank:108},{name:"Count Dooku",rank:184},{name:"Bail Prestor Organa",rank:197},{name:"Jango Fett",rank:169},{name:"Zam Wesell",rank:111},{name:"Taun We",rank:149},{name:"Jocasta Nu",rank:108},{name:"R4-P17",rank:81},{name:"Shaak Ti",rank:137},{name:"Grievous",rank:202},{name:"Raymus Antilles",rank:168},{name:"Sly Moore",rank:87},{name:"Tion Medon",rank:180},{name:"Finn",rank:189},{name:"Rey",rank:142},{name:"Poe Dameron",rank:164},{name:"BB-8",rank:108},{name:"Captain Phasma",rank:143},{name:"Padmé Amidala",rank:133}];
+
+               //Skilar þeim 5 karakterum sem eru líkastir þér
 
                 function closestTo(a,b) {
                   if (Math.abs(a.rank - matchScore) > Math.abs(b.rank - matchScore)) return 1;
@@ -166,23 +174,16 @@
                 var closest5 = charactersArray.sort(closestTo).slice(0,5);
 
                 vm.closest5 = closest5;
-                console.log(closest5);
+                // console.log(closest5);
 
 
-            console.log(userData)
+            // console.log(userData)
         }), function(error) {
             console.log('Error:' +error);
         };
 
         // console.log(ref.child(user.uid));
     });
-
-
-
-
-    vm.model = {
-        message: $routeParams.id + 'Þitt'
-    }
 
 
   }
