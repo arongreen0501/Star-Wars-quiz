@@ -6,10 +6,10 @@
 </div>
 
 <div ng-repeat="character in vm.data | filter:search:strict" style="width: 500px" class="cf">
-<!-- <div ng-repeat="character in vm.data | filter:search:strict" class="characters_page results-card results-card-back"> -->
-<!--   <div class="characterImg">
+<div ng-repeat="character in vm.data | filter:search:strict" class="characters_page results-card results-card-back">
+  <div class="characterImg">
       <img ng-src="content/img/characterIMG/{{character.name}}.jpg">
-    </div> -->
+    </div>
     <div class="results_info">
       <h3>{{ character.name }}</h3>
 <!--       <p>Hæð: <span>{{ character.height }}</span></p>
@@ -21,12 +21,4 @@
       <p>Bílpróf: <span>{{ character.drive }}</span></p> -->
     </div>
 
-
-  <br>
-  <button ng-click="vm.calculateCharacterScore(character)" class="btn btn-danger" type="">Calculate score</button>
-  <br>
 </div>
-
-<!-- <div id="preloader">
-      <div id="status">&nbsp;</div>
-</div> -->
