@@ -5,7 +5,7 @@
   <input class="charSearch" ng-model="search.name" placeholder="Use the Force!" style="width: 100%;">
 </div>
 
-<div ng-repeat="character in vm.data | filter:search:strict" style="width: 500px" class="cf">
+<!-- <div ng-repeat="character in vm.data | filter:search:strict" style="width: 500px" class="cf"> -->
 <div ng-repeat="character in vm.data | filter:search:strict" class="characters_page results-card results-card-back">
   <div class="characterImg">
       <img ng-src="content/img/characterIMG/{{character.name}}.jpg">
