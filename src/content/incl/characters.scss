@@ -1,0 +1,41 @@
+//CHARACTER PAGE
+
+.characters_page {
+  height: 270px;
+
+  input {
+    width: 100%;
+  }
+
+  input[name=search] {
+    color: #fff;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+
+    span {
+      font-size: 20px;
+    }
+  }
+}
+
+.searchCharacters {
+  position: relative;
+}
+.searchCharacters input {
+  text-indent: 30px;
+}
+.searchCharacters .fa-search {
+    @include centerer;
+    left: 92%;
+    font-size: 22px;
+}

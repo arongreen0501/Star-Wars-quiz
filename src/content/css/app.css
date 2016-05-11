@@ -1287,6 +1287,53 @@ fieldset h3 {
   color: #0BAA8E;
 }
 
+.characters_page {
+  height: 270px;
+}
+
+.characters_page input {
+  width: 100%;
+}
+
+.characters_page input[name=search] {
+  color: #fff;
+}
+
+.characters_page h3 {
+  margin-bottom: 10px;
+}
+
+.characters_page p {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+.characters_page p span {
+  font-size: 20px;
+}
+
+.searchCharacters {
+  position: relative;
+}
+
+.searchCharacters input {
+  text-indent: 30px;
+}
+
+.searchCharacters .fa-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 92%;
+  font-size: 22px;
+}
+
 body {
   background-image: url("../img/backr1.jpg");
   background-color: black;

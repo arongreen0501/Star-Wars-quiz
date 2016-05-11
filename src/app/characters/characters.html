@@ -1,23 +1,32 @@
-<h1>Characters</h1>
+<h1>Star Wars Persónur</h1>
+
+<div class="searchCharacters">
+  <span class="fa fa-search"></span>
+  <input class="charSearch" ng-model="search.name" placeholder="Use the Force!" style="width: 100%;">
+</div>
+
+<div ng-repeat="character in vm.data | filter:search:strict" style="width: 500px" class="cf">
+<!-- <div ng-repeat="character in vm.data | filter:search:strict" class="characters_page results-card results-card-back"> -->
+<!--   <div class="characterImg">
+      <img ng-src="content/img/characterIMG/{{character.name}}.jpg">
+    </div> -->
+    <div class="results_info">
+      <h3>{{ character.name }}</h3>
+<!--       <p>Hæð: <span>{{ character.height }}</span></p>
+      <p>Þyngd: <span>{{ character.weight }}</span></p>
+      <p>Kyn: <span>{{ character.gender }}</span></p>
+      <p>Hárlitur: <span>{{ character.hair }}</span></p>
+      <p>Augnlitur: <span>{{ character.eyes }}</span></p>
+      <p>Kjördæmi: <span>{{ character.residence }}</span></p>
+      <p>Bílpróf: <span>{{ character.drive }}</span></p> -->
+    </div>
 
 
-<p ng-repeat="character in vm.data">
-  <strong>{{ character.name }}</strong>
-  <br>
-  {{ character.height }}
-  <br>
-  {{ character.weight }}
-  <br>
-  {{ character.gender }}
-  <br>
-  {{ character.hair }}
-  <br>
-  {{ character.eyes }}
-  <br>
-  {{ character.residence }}
-  <br>
-  {{ character.drive }}
   <br>
   <button ng-click="vm.calculateCharacterScore(character)" class="btn btn-danger" type="">Calculate score</button>
   <br>
-</p>
+</div>
+
+<!-- <div id="preloader">
+      <div id="status">&nbsp;</div>
+</div> -->

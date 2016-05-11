@@ -9,8 +9,14 @@
         function characterController(DataService) {
             var vm = this;
 
+            $('#status').delay(4000).fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(4000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(350).css({'overflow':'visible'});
+
             vm.data = DataService.characterData;
             vm.calculateCharacterScore = calculateCharacterScore;
+
+
 
 
 
