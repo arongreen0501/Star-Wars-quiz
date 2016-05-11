@@ -535,7 +535,7 @@ input[type=text]:focus, textarea:focus, input[type=number]:focus, input:-webkit-
   float: right;
   margin-top: 20px;
   border-radius: 20px;
-  width: 100px;
+  width: 180px;
   border: 1px;
   border-color: #0BAA8E;
   background-color: #0BAA8E;
@@ -563,8 +563,6 @@ input[type=text]:focus, textarea:focus, input[type=number]:focus, input:-webkit-
 
 .nextButton:hover {
   background: #62DCC3;
-  width: 130px;
-  text-align: left;
   padding-left: 15px;
 }
 
@@ -640,6 +638,10 @@ input[type=text]:focus, textarea:focus, input[type=number]:focus, input:-webkit-
 .backButton:hover:before {
   left: 10%;
   opacity: 1;
+}
+
+.intro_button:hover {
+  padding-left: 0px !important;
 }
 
 .icon-arrow-right:before {
