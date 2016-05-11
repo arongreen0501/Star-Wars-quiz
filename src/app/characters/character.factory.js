@@ -258,16 +258,6 @@
           "drive": "bilprof"
         },
         {
-          "name": "Lobot",
-          "height": "175",
-          "weight": "79",
-          "hair": "other",
-          "eyes": "blue",
-          "gender": "male",
-          "residence": "sudvestur",
-          "drive": "ekkibilprof"
-        },
-        {
           "name": "Ackbar",
           "height": "180",
           "weight": "83",
@@ -288,7 +278,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": " Crynyd",
+          "name": "Arvel Crynyd",
           "height": "167",
           "weight": "72",
           "hair": "brown",
@@ -298,7 +288,7 @@
           "drive": "bilprof"
         },
         {
-          "name": "Wicket Systri Warrick",
+          "name": "Wicket Wystri Warrick",
           "height": "88",
           "weight": "20",
           "hair": "brown",
@@ -471,16 +461,6 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Dud Bolt",
-          "height": "94",
-          "weight": "45",
-          "hair": "other",
-          "eyes": "grayblue",
-          "gender": "male",
-          "residence": "nordaustur",
-          "drive": "ekkibilprof"
-        },
-        {
           "name": "Gasgano",
           "height": "122",
           "weight": "31",
@@ -488,16 +468,6 @@
           "eyes": "brown",
           "gender": "male",
           "residence": "nordaustur",
-          "drive": "ekkibilprof"
-        },
-        {
-          "name": "Ben Quadinaros",
-          "height": "163",
-          "weight": "65",
-          "hair": "other",
-          "eyes": "lightbrown",
-          "gender": "male",
-          "residence": "nordvestur",
           "drive": "ekkibilprof"
         },
         {
@@ -518,17 +488,6 @@
           "eyes": "grayblue",
           "gender": "male",
           "residence": "nordvestur",
-          "drive": "ekkibilprof"
-        },
-
-        {
-          "name": "Kit Fisto",
-          "height": "196",
-          "weight": "87",
-          "hair": "other",
-          "eyes": "brown",
-          "gender": "male",
-          "residence": "sudur",
           "drive": "ekkibilprof"
         },
         {
@@ -570,16 +529,6 @@
           "gender": "male",
           "residence": "sudur",
           "drive": "ekkibilprof"
-        },
-        {
-          "name": "Plo Koon",
-          "height": "188",
-          "weight": "80",
-          "hair": "other",
-          "eyes": "brown",
-          "gender": "male",
-          "residence": "nordaustur",
-          "drive": "bilprof"
         },
         {
           "name": "Mas Amedda",
@@ -630,16 +579,6 @@
           "eyes": "grayblue",
           "gender": "male",
           "residence": "sudvestur",
-          "drive": "ekkibilprof"
-        },
-        {
-          "name": "Luminara Unduli",
-          "height": "170",
-          "weight": "56",
-          "hair": "black",
-          "eyes": "blue",
-          "gender": "female",
-          "residence": "reykjavik",
           "drive": "ekkibilprof"
         },
         {
@@ -703,28 +642,6 @@
           "drive": "bilprof"
         },
         {
-          "name": "Dexter Jettster",
-          "height": "198",
-          "weight": "102",
-          "hair": "other",
-          "eyes": "grayblue",
-          "gender": "male",
-          "residence": "sudur",
-          "drive": "ekkibilprof"
-        },
-        {
-          "name": "Lama Su",
-          "height": "229",
-          "weight": "88",
-          "hair": "other",
-          "eyes": "brown",
-          "gender": "male",
-          "residence": "reykjavik",
-          "drive": "ekkibilprof"
-        },
-
-
-        {
           "name": "Taun We",
           "height": "213",
           "weight": "66",
@@ -755,26 +672,6 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Wat Tambor",
-          "height": "193",
-          "weight": "48",
-          "hair": "other",
-          "eyes": "other",
-          "gender": "male",
-          "residence": "nordaustur",
-          "drive": "ekkibilprof"
-        },
-        {
-          "name": "San Hill",
-          "height": "191",
-          "weight": "70",
-          "hair": "other",
-          "eyes": "lightbrown",
-          "gender": "male",
-          "residence": "sudvestur",
-          "drive": "ekkibilprof"
-        },
-        {
           "name": "Shaak Ti",
           "height": "178",
           "weight": "57",
@@ -793,16 +690,6 @@
           "gender": "male",
           "residence": "nordaustur",
           "drive": "bilprof"
-        },
-        {
-          "name": "Tarfful",
-          "height": "234",
-          "weight": "136",
-          "hair": "brown",
-          "eyes": "blue",
-          "gender": "male",
-          "residence": "reykjavik",
-          "drive": "ekkibilprof"
         },
         {
           "name": "Raymus Antilles",
