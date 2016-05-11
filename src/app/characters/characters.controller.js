@@ -76,16 +76,16 @@
                 } else if (character.weight >=111 && character.weight <=120) {
                   rank = rank + 42;
                 } else {
-                  rank = rank + 46;
+                  rank = rank + 50;
                 };
 
                 if (character.residence == 'sudur') {
                   rank = rank + 6;
-                } else if (character.residence == 'sudvestur') {
-                  rank = rank + 12;
-                } else if (character.residence == 'reykjavik') {
-                  rank = rank + 18;
                 } else if (character.residence == 'nordvestur') {
+                  rank = rank + 12;
+                } else if (character.residence == 'sudvestur') {
+                  rank = rank + 18;
+                } else if (character.residence == 'reykjavik') {
                   rank = rank + 24;
                 } else {
                   rank = rank + 30;
@@ -105,27 +105,27 @@
                   rank = rank + 0;
                 };
 
-                if (character.hair == 'gray') {
+                if (character.hair == 'red') {
                   rank = rank + 7;
-                } else if (character.hair == 'blonde') {
-                  rank = rank + 9;
-                } else if (character.hair == 'other') {
-                  rank = rank + 12;
-                } else if (character.hair == 'red') {
-                  rank = rank + 16;
                 } else if (character.hair == 'brown') {
-                  rank = rank + 20;
+                  rank = rank + 9;
+                } else if (character.hair == 'blonde') {
+                  rank = rank + 14;
+                } else if (character.hair == 'other') {
+                  rank = rank + 18;
+                } else if (character.hair == 'gray') {
+                  rank = rank + 21;
                 } else {
-                  rank = rank + 23;
+                  rank = rank + 26;
                 };
 
                 if (character.eyes == 'blue') {
                   rank = rank + 7;
-                } else if (character.eyes == 'grayblue') {
-                  rank = rank + 9;
                 } else if (character.eyes == 'green') {
-                  rank = rank + 15;
+                  rank = rank + 9;
                 } else if (character.eyes == 'other') {
+                  rank = rank + 15;
+                } else if (character.eyes == 'grayblue') {
                   rank = rank + 22;
                 } else if (character.eyes == 'brown') {
                   rank = rank + 30;

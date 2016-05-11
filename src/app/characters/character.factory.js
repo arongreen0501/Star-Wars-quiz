@@ -110,8 +110,8 @@
           "name": "Obi-Wan Kenobi",
           "height": "182",
           "weight": "77",
-          "hair": "white",
-          "eyes": "blue-gray",
+          "hair": "gray",
+          "eyes": "grayblue",
           "gender": "male",
           "residence": "sudvestur",
           "drive": "bilprof"
@@ -130,7 +130,7 @@
           "name": "Wilhuff Tarkin",
           "height": "180",
           "weight": "70",
-          "hair": "auburn, grey",
+          "hair": "gray",
           "eyes": "blue",
           "gender": "male",
           "residence": "sudvestur",
@@ -169,7 +169,7 @@
         {
           "name": "Jabba the Hutt",
           "height": "175",
-          "weight": "1,358",
+          "weight": "1358",
           "hair": "other",
           "eyes": "lightbrown",
           "gender": "other",
@@ -220,7 +220,7 @@
         {
           "name": "Boba Fett",
           "height": "183",
-          "weight": "78.2",
+          "weight": "78",
           "hair": "black",
           "eyes": "brown",
           "gender": "male",
@@ -635,7 +635,7 @@
         {
           "name": "Luminara Unduli",
           "height": "170",
-          "weight": "56.2",
+          "weight": "56",
           "hair": "black",
           "eyes": "blue",
           "gender": "female",
@@ -749,7 +749,7 @@
           "height": "96",
           "weight": "32",
           "hair": "other",
-          "eyes": "red, blue",
+          "eyes": "blue",
           "gender": "female",
           "residence": "reykjavik",
           "drive": "ekkibilprof"
@@ -789,7 +789,7 @@
           "height": "216",
           "weight": "159",
           "hair": "other",
-          "eyes": "green, yellow",
+          "eyes": "green",
           "gender": "male",
           "residence": "nordaustur",
           "drive": "bilprof"
