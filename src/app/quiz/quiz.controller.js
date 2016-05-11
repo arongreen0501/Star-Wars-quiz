@@ -30,8 +30,6 @@
       vm.newSubmission = new Submission();
       vm.submissions = $firebaseArray(fireSubmissions);
       vm.addSubmission =  addSubmission;
-      vm.calculateScore = calculateScore;
-      vm.removeSubmission = removeSubmission;
       vm.skref = 1;
       vm.aframSkref = aframSkref;
       vm.afturSkref = afturSkref;
@@ -51,7 +49,6 @@
       function aframSkref() {
         if(vm.skref == 6) {
           addSubmission();
-          calculateScore(user);
         } else {
           vm.skref++;
         }
