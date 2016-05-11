@@ -12,7 +12,7 @@
             return dataObj;
         }
 
-
+        //API frá swapi.com, sniðinn að okkar þörfum..
 
         var characterData = [
 

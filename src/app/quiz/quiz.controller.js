@@ -9,12 +9,16 @@
 
     function quizController($firebaseArray, $routeParams, $window) {
 
+      //Viewmodel
       var vm =  this;
 
       var user = {};
 
+      //Býr til Firebase gagnagrunn
+
       var fireSubmissions = new Firebase('https://skywalker-quiz.firebaseio.com/quizSubmission');
 
+      //Submission
 
       function Submission() {
         this.name = '';
@@ -33,17 +37,6 @@
       vm.skref = 1;
       vm.aframSkref = aframSkref;
       vm.afturSkref = afturSkref;
-      vm.errorMsg = errorMsg;
-      vm.test = function() {
-        console.log("takki");
-        console.log(user);
-      }
-
-      function errorMsg() {
-        if(myAwesomeForm.$invalid == true) {
-          console.log("error");
-        }
-      }
 
 
       function aframSkref() {
@@ -61,11 +54,12 @@
       function addSubmission() {
         user = vm.newSubmission;
 
+        //Ýtir user inní Database by ID
 
         var userID = fireSubmissions.push(vm.newSubmission);
         vm.newSubmission = new Submission();
         // user = vm.newSubmission;
-        console.log(user, 'user ID: '+userID.key());
+        // console.log(user, 'user ID: '+userID.key());
         $window.location.href = '/#/results/'+userID.key();
       }
 
