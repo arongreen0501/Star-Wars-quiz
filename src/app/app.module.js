@@ -13,7 +13,8 @@
     'app.intro',
     'app.quiz',
     'app.characters',
-    'app.results'
+    'app.results',
+    '720kb.socialshare'
 
     ]);
 

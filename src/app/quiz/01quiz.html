@@ -8,13 +8,13 @@
     <fieldset class="personal_info" ng-show="vm.skref == 1">
       <h3>Fyrst þurfum við fullt nafn, hæð og þyngd</h3>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.name" name="fullName" type="text" class="form-control" placeholder="Full name" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.name" name="fullName" type="text" class="form-control" placeholder="Fullt nafn" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.weight" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Weight (kg)" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.weight" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Þyngd (kg)" ng-required="vm.skref == 1" />
       </div>
       <div class="form-group">
-        <input ng-model="vm.newSubmission.height" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Height (cm)" ng-required="vm.skref == 1" />
+        <input ng-model="vm.newSubmission.height" type="number" pattern="[0-9]*" inputmode="numeric" class="form-control" placeholder="Hæð (cm)" ng-required="vm.skref == 1" />
       </div>
 
       <span ng-show="myAwesomeForm.fullName.$dirty && myAwesomeForm.fullName.$error.required ">Fylla út</span>
@@ -29,15 +29,15 @@
         <ul class="radio-style">
           <li>
             <input ng-model="vm.newSubmission.gender" type="radio" id="male" value="male" name="male" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="male">Male</label>
+            <label for="male">Kalkyn</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.gender" type="radio" id="female" value="female" name="female" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="female">Female</label>
+            <label for="female">Kvenkyn</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.gender" type="radio" id="other" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="other">Other</label>
+            <label for="other">Annað</label>
           </li>
         </ul>
       </div>
@@ -50,27 +50,27 @@
         <ul class="radio-style">
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="blonde" value="blonde" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="blonde">Blonde</label>
+            <label for="blonde">Ljóst</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="black" value="black" name="black" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="black">Black</label>
+            <label for="black">Svart</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="brown" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="brown">Brown</label>
+            <label for="brown">Brúnt</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="gray" value="gray" name="gray" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="gray">Gray or white</label>
+            <label for="gray">Grátt / Hvítt</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="red" value="red" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="red">Red</label>
+            <label for="red">Rautt</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.hair" type="radio" id="noneOrOther" value="other" name="blonde" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="noneOrOther">None or other color</label>
+            <label for="noneOrOther">Ekkert hár eða annar litur</label>
           </li>
         </ul>
       </div>
@@ -83,27 +83,27 @@
         <ul class="radio-style">
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="blue-eyes" value="blue" name="blue" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="blue-eyes">Blue</label>
+            <label for="blue-eyes">Blá</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="grayblue-eyes" value="grayblue" name="grayblue" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="grayblue-eyes">Gray-blue</label>
+            <label for="grayblue-eyes">Gráblá</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="brown-eyes" value="brown" name="brown" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="brown-eyes">Brown</label>
+            <label for="brown-eyes">Brún</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="lightbrown-eyes" value="lightbrown" name="lightbrown" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="lightbrown-eyes">Lightbrown</label>
+            <label for="lightbrown-eyes">Ljósbrún</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="green-eyes" value="green" name="green" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="green-eyes">Green</label>
+            <label for="green-eyes">Græn</label>
           </li>
           <li>
             <input ng-model="vm.newSubmission.eyes" type="radio" id="other-eyes" value="other" name="other" class="form-control" ng-click="vm.aframSkref()"/>
-            <label for="other-eyes">Other</label>
+            <label for="other-eyes">Annað</label>
           </li>
         </ul>
       </div>
