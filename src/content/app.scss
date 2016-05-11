@@ -16,6 +16,7 @@
 @import "incl/mediaqueries.scss";
 
 body {
+  height: 100%;
   background-image: url("../img/backr1.jpg");
   // background-size: cover;
   background-color: black;
@@ -25,6 +26,7 @@ body {
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -35,6 +37,8 @@ html {
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
+  min-height: 31%;
+  margin-bottom: 140px;
 }
 
 .logo {

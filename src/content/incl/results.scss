@@ -129,3 +129,58 @@ p.stig {
   top: 70%;
   left: 86%;
 }
+
+
+
+.ShareandAgain {
+  margin-top: 80px;
+
+  .fbButton {
+    float: left;
+    border-radius: 20px;
+    width: 200px;
+    background: blue;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .takeAgainButton {
+    float: left;
+    border-radius: 20px;
+    width: 200px;
+    background: blue;
+    color: #fff;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  .takeAgain {
+    float: right;
+  }
+}
+
+
+
+// .nextButton {
+//     float: right;
+//     margin-top: 20px;
+//     border-radius: 20px;
+//     width: 100px;
+//     border: 1px;
+//     border-color: #0BAA8E;
+//     background-color: $primaryGreen;
+//     color: white;
+//     text-transform: uppercase;
+//     height: 40px;
+//     cursor: pointer;
+//     display: inline-block;
+//     position: relative;
+//     -webkit-transition: all 0.5s;
+//     -moz-transition: all 0.5s;
+//     transition: all 0.5s;
+// }

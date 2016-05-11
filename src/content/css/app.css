@@ -1488,6 +1488,40 @@ p.stig {
   left: 86%;
 }
 
+.ShareandAgain {
+  margin-top: 80px;
+}
+
+.ShareandAgain .fbButton {
+  float: left;
+  border-radius: 20px;
+  width: 200px;
+  background: blue;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ShareandAgain .takeAgainButton {
+  float: left;
+  border-radius: 20px;
+  width: 200px;
+  background: blue;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ShareandAgain .takeAgain {
+  float: right;
+}
+
 fieldset h3 {
   font-size: 24px;
   border-bottom: 3px solid rgba(255, 255, 255, 0.3);
@@ -1584,24 +1618,25 @@ fieldset h3 {
   content: '';
 }
 
-footer {
-  margin-top: 90px !important;
-  position: fixed !important;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  height: 30px;
+.site-footer, .container:after {
+  height: 140px;
 }
 
-.fotur-grunnur {
-  background-color: black;
-  height: 30px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
+.site-footer a {
+  text-decoration: none;
+  color: #FE2A4A;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.site-footer a:hover {
+  color: #FF506B;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.site-footer p {
+  text-align: center;
 }
 
 @media only screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1631,6 +1666,10 @@ footer {
   .badge1img {
     display: none;
   }
+  .falcon, .fighter1c, .fighter1, .fighter2, .fighter3, .falconb, .fighter3b, .planetMotion4 {
+    visibility: hidden;
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 321px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1640,6 +1679,7 @@ footer {
 }
 
 body {
+  height: 100%;
   background-image: url("../img/backr1.jpg");
   background-color: black;
   font-family: 'Work Sans', sans-serif;
@@ -1648,6 +1688,7 @@ body {
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
 }
 
@@ -1659,6 +1700,8 @@ html {
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
+  min-height: 31%;
+  margin-bottom: 140px;
 }
 
 .logo {
