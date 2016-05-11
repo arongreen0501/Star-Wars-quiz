@@ -76,15 +76,16 @@ html {
     left:0;
     right:0;
     bottom:0;
-    background: url(../img/backr1.jpg) ; /* change if the mask should have another color then white */
+    // background: #fff ; change if the mask should have another color then white
     z-index:999; /* makes sure it stays on top */
+    display: none;
 }
 
-#status {
-    width:200px;
-    height:200px;
-    @include centerer;
-    background: url(../img/BB8animate2.gif); /* path to your loading animation */
-    background-repeat:no-repeat;
-    background-position:center;
-}
+// #status {
+//     width:200px;
+//     height:200px;
+//     @include centerer;
+//     background: url(../img/BB8animate2.gif); /* path to your loading animation */
+//     background-repeat:no-repeat;
+//     background-position:center;
+// }

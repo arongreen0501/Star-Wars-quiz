@@ -1163,6 +1163,132 @@ input[type=text], input[type=number] {
           animation-timing-function: linear;
 }
 
+/*============___PRELOADER___===============*/
+.BB8container {
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 35%;
+}
+
+.BB8head {
+  position: absolute;
+  left: -212px;
+  top: -110px;
+  margin-top: 15%;
+  z-index: 50;
+  -webkit-animation: bobble 2s infinite ease-in-out;
+}
+
+.BB8body {
+  position: absolute;
+  left: -100px;
+  z-index: 49;
+  margin-top: 15%;
+  -webkit-animation: spin 1.3s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes bobble {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+
+.desert1 {
+  width: 100%;
+  height: 120px;
+  margin-top: 2%;
+  z-index: 41;
+  position: absolute;
+  background: url(../img/desert1.svg);
+  background-position: 110px 110px;
+  background-repeat: repeat-x;
+  -webkit-animation: animatedBackground 11s linear infinite;
+          animation: animatedBackground 11s linear infinite;
+}
+
+@-webkit-keyframes animatedBackground {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.desert2 {
+  width: 100%;
+  height: 110px;
+  margin-top: 9%;
+  position: relative;
+  z-index: 40;
+  background: url(../img/desert2.svg);
+  background-position: 110px 110px;
+  background-repeat: repeat-x;
+  -webkit-animation: animatedBackground 14s linear infinite;
+          animation: animatedBackground 14s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.desert2color {
+  background: #d69c04;
+  height: 900px;
+  width: 100%;
+  z-index: 48;
+  margin-top: 1%;
+  position: fixed;
+}
+
+.blueSky {
+  background: #d6f5ff;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 39;
+  top: 0;
+  width: 100%;
+}
+
+.BB8text {
+  position: absolute;
+  z-index: 55;
+  left: 50%;
+  margin-left: -165px;
+  top: 60%;
+}
+
 .formContainer fieldset {
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
@@ -1196,6 +1322,10 @@ input[type=text], input[type=number] {
 /* Internet Explorer */
 
 /* Opera < 12.1 */
+
+.results {
+  display: none;
+}
 
 .results p {
   font-size: 20px;
@@ -1418,23 +1548,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url(../img/backr1.jpg);
-  /* change if the mask should have another color then white */
   z-index: 999;
   /* makes sure it stays on top */
-}
-
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: url(../img/BB8animate2.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
+  display: none;
 }

@@ -18,10 +18,23 @@
 
 
     $timeout(function() {
+
          // makes sure the whole site is loaded
-            $('#status').delay(5000).fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(5000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $(".results").delay(500).fadeIn(100);
+            $('#preloader').hide().fadeIn(700);
+            $('#status').fadeIn();
+            $('#status').delay(7000).fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(7000).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(350).css({'overflow':'visible'});
+
+
+            // jQuery(function(){
+            //   jQuery("#status").fadeIn(500, function(){
+            //     jQuery("#status").delay(500).fadeOut(1000, function(){
+            //       jQuery("#preloader").fadeOut(2000);
+            //     });
+            //   });
+            // });
 
         var record = ref.child(key);
 
