@@ -13,6 +13,7 @@
 @import "incl/characters.scss";
 @import "incl/intro.scss";
 @import "incl/footer.scss";
+@import "incl/mediaqueries.scss";
 
 body {
   background-image: url("../img/backr1.jpg");
@@ -38,7 +39,6 @@ html {
 
 .logo {
     text-align: center;
-    margin-top: -70px;
 }
 
 /**

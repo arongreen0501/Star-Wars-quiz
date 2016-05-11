@@ -1,0 +1,54 @@
+@media only screen
+    and (max-width: 667px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .badge1 {
+        top: 13%;
+        left: 77%;
+    }
+
+    .badge2 {
+        position: absolute;
+        top: 63%;
+        left: 86%;
+    }
+
+    .badge2img {
+        display: none;
+    }
+
+    .characterImg {
+        width: 100%;
+    }
+
+    .characterImg img {
+        width: 100%;
+    }
+
+    .results_info {
+        width: 100%;
+        position: absolute;
+        top: 65%;
+    }
+
+    .badge1img {
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+@media only screen
+    and (max-width: 321px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+    .desert2color {
+        margin-top: -10px;
+    }
+}

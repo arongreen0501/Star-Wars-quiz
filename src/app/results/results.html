@@ -3,8 +3,8 @@
 
   <div class="results-card">
   <div class="characterImg">
-      <h3> {{ vm.userData.name }} <h3>
-    <p>Þú fékkst <span>{{ vm.rank }} stig</span></p>
+      <h3> {{ vm.userData.name }} </h3>
+    <h3>Þú fékkst <span>{{ vm.rank }} stig</span></h3>
     </div>
     <div class="badge1container results_info">
       <div class="badge1">{{ vm.rank }}</div>
@@ -21,8 +21,8 @@
       <img ng-src="content/img/characterIMG/{{val.name}}.jpg">
     </div>
     <div class="results_info">
-    <h3>{{ val.name }}<h3>
-    <div class="badge2">{{ val.rank }}</div>
+    <h3>{{ val.name }}</h3>
+    <div class="badge2"><h3>{{ val.rank }}</h3></div>
     <div class="badge2img"><img src="content/img/badge2.svg" alt="" height="75" width="170"></div>
     </div>
     <!-- <progress value="{{ val.rank }}" max="{{ vm.rank }}"></progress> -->
@@ -37,6 +37,8 @@
     socialshare-media="content/img/characterIMG/{{val.name}}.jpg">
     <button type="button">Facebook Share</button>
   </a>
+
+  <a href="/src/#/quiz"><button type="button">Taka aftur</button></a>
 
 <div id="preloader">
   <div id="status">
