@@ -79,6 +79,9 @@ input {
     position: relative;
     width: 100%;
     margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .radio-style label, .radio-style input {
@@ -120,4 +123,40 @@ input[type=text], input[type=number] {
 .radio-style label:hover {
      background: $primaryGreen;
      transition: 0.5s;
+}
+
+// input:-webkit-autofill {
+//     -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 0 50px pink inset;
+//     -webkit-text-fill-color: #333;
+// }
+// input:-webkit-autofill:focus {
+//     -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 0 50px pink inset;
+//     -webkit-text-fill-color: #333;
+// }
+
+// input:-webkit-autofill {
+//     -webkit-box-shadow: inset 0 0 0px 9999px white;
+// }
+
+
+input[type=text], textarea, input[type=number], input:-webkit-autofill {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+
+  // padding: 3px 0px 3px 3px;
+  // margin: 5px 1px 3px 0px;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 0 50px rgba(11, 170, 142, 1) inset;
+}
+
+input[type=text]:focus, textarea:focus, input[type=number]:focus, input:-webkit-autofill:focus  {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1), 0 0 0 50px rgba(98, 220, 195, 1) inset;
+  // padding: 3px 0px 3px 3px;
+  // margin: 5px 1px 3px 0px;
+  // border: 1px solid rgba(81, 203, 238, 1);
 }

@@ -470,6 +470,9 @@ input {
   position: relative;
   width: 100%;
   margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .radio-style label, .radio-style input {
@@ -510,6 +513,22 @@ input[type=text], input[type=number] {
   background: #0BAA8E;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+input[type=text], textarea, input[type=number], input:-webkit-autofill {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 5px #51cbee, 0 0 0 50px #0baa8e inset;
+}
+
+input[type=text]:focus, textarea:focus, input[type=number]:focus, input:-webkit-autofill:focus {
+  box-shadow: 0 0 5px #51cbee, 0 0 0 50px #62dcc3 inset;
 }
 
 .nextButton {
