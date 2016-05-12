@@ -171,7 +171,7 @@
                 }
 
 
-                var closest5 = charactersArray.sort(closestTo).slice(0,5);
+                var closest5 = charactersArray.sort(closestTo).slice(0,3);
 
                 vm.closest5 = closest5;
                 // console.log(closest5);
