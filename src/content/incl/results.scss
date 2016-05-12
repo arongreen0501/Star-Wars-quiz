@@ -25,9 +25,13 @@ p.results-score {
   margin-top: -20px;
 }
 
-.results-p {
-  font-size: 20px;
+#nuskaltuvirka {
   padding-left: 10px;
+}
+
+p.results-p {
+  font-size: 20px;
+  padding-left: 10px !important;
 }
 
 .results-card {

@@ -40,6 +40,15 @@
         display: none !important;
     }
 
+     #mobilefix {
+        width: 70%;
+    }
+
+
+    .facebookShare, .takeAgain, .facebookShare button, .takeAgain button, .takeAgainButton, .fbButton {
+        width: 100%;
+    }
+
 
 
 }
@@ -54,4 +63,5 @@
     .desert2color {
         margin-top: -10px;
     }
+
 }

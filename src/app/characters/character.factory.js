@@ -370,7 +370,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Ric Olié",
+          "name": "Ric Olie",
           "height": "183",
           "weight": "82",
           "hair": "brown",
@@ -551,7 +551,7 @@
           "drive": "bilprof"
         },
         {
-          "name": "Cordé",
+          "name": "Corde",
           "height": "157",
           "weight": "52",
           "hair": "brown",
@@ -592,7 +592,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Dormé",
+          "name": "Dorme",
           "height": "165",
           "weight": "45",
           "hair": "brown",
@@ -775,7 +775,7 @@
           "drive": "ekkibilprof"
         },
         {
-          "name": "Padmé Amidala",
+          "name": "Padme Amidala",
           "height": "165",
           "weight": "45",
           "hair": "brown",

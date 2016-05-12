@@ -6,7 +6,7 @@
   <div class="results-card">
   <div class="characterImg">
       <h3> {{ vm.userData.name }} </h3>
-    <p class="result-p">Þú fékkst <span>{{ vm.rank }} stig</span></p>
+    <p class="results-p" id="nuskaltuvirka">Þú fékkst <span>{{ vm.rank }} stig</span></p>
     </div>
     <div class="badge1container results_info">
       <div class="badge1">{{ vm.rank }}</div>
@@ -23,7 +23,7 @@
       <img ng-src="content/img/characterIMG/{{val.name}}.jpg">
     </div>
     <div class="results_info">
-    <h3>{{ val.name }}</h3>
+    <h3 id="mobilefix">{{ val.name }}</h3>
     <div class="badge2"><h3>{{ val.rank }}</h3></div>
     <div class="badge2img"><img src="content/img/badge2.svg" alt="" height="75" width="170"></div>
     </div>
